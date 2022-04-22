@@ -12,11 +12,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ErrorComponent } from './error/error.component';
+import { SignComponent } from './sign/sign.component';
+import { PreviewComponent } from './preview/preview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    ErrorComponent,
+    SignComponent,
+    PreviewComponent
   ],
   imports: [
     BrowserModule,
