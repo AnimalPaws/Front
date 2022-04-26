@@ -12,11 +12,11 @@ import { TranslateConfigService } from '../services/translate-config.service';
 import { from } from 'rxjs';
 
 @Component({
-  selector: 'app-sign',
-  templateUrl: './sign.component.html',
-  styleUrls: ['./sign.component.scss']
+  selector: 'app-signin',
+  templateUrl: './signin.component.html',
+  styleUrls: ['./signin.component.scss']
 })
-export class SignComponent implements OnInit {
+export class SigninComponent implements OnInit {
   faLanguage = faLanguage;
   faMoon = faMoon;
   faUser = faUser;
@@ -28,7 +28,7 @@ export class SignComponent implements OnInit {
   a = 2;
   b = 1;
 
-  constructor(public translate:TranslateService, private translateConfigService: TranslateConfigService ) { 
+  constructor(public translate:TranslateService, private translateConfigService: TranslateConfigService) {
     this.translate.addLangs(['es', 'en']);
     this.translate.setDefaultLang('en');
   }
@@ -45,4 +45,5 @@ export class SignComponent implements OnInit {
   changeLanguage(type: string) {
     this.translateConfigService.changeLanguage(type);
   }
+
 }

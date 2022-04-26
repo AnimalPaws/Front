@@ -16,6 +16,8 @@ import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
 import { SignComponent } from './sign/sign.component';
 import { PreviewComponent } from './preview/preview.component';
+import { SignupComponent } from './signup/signup.component';
+import { SigninComponent } from './signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PreviewComponent } from './preview/preview.component';
     AboutComponent,
     ErrorComponent,
     SignComponent,
-    PreviewComponent
+    PreviewComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,

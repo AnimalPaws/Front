@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <header class="page-header">
+        <div class="top-row">
+        <div class="menu-wrap">
+            <a href="#" class="menu-switcher" aria-label="Toggle main menu">
+            </a>
+        </div>
+        <div class="logo-wrap">
+            <a href="#" class="logo">
+            <img class="logo" src="../../assets/img/logo.png" alt="AP LOGO">
+            </a>
+        </div>
+        <!--Nav By Action-->
+            <nav class="top-row-toolbar">
+            <a href="#"><fa-icon [icon]="faMoon"></fa-icon></a>
+            <a><button (click)="changeLanguage('en')" class="btnlang"><fa-icon [icon]="faLanguage"></fa-icon></button></a>
+            <a routerLink="/SignIn"><fa-icon [icon]="faUser"></fa-icon></a>
+            <a routerLink="/SignUp">Inscribirse</a>
+
+            </nav>
+        <!-- End Nav By Action-->
+        </div>
+        <!--Navigation Page-->
+        <nav class="main-nav">
+            <a href="#"><fa-icon [icon]="faNewspaper"></fa-icon> {{"UPD" | translate}}</a>
+            <a href="#"><fa-icon [icon]="faWrench"></fa-icon> {{"FUN" | translate}}</a>
+            <a href="#"><fa-icon [icon]="faHashtag"></fa-icon> {{"AS" | translate}}</a>
+            <a href="#"><fa-icon [icon]="faEyeslash"></fa-icon> {{"Preview" | translate}}</a>
+        </nav>
+        <!--End Navigation Page-->
+    </header>
+
+    <section>
+        <p>Sign In  Woks!</p>
+
+        <form>
+            <h2 class="title-form">Inicia Seccion</h2>
+                <input  class="paragraph-inputs"placeholder="Nombre"/>
+                <input class="paragraph-inputs" placeholder="Correo"/><input class="paragraph-inputs"
+                placeholder="Contraseña"/>
+                <button class="Button-style">Iniciar</button>
+        </form>
+
+    </section>
+        
+
+
+
+
+
+
+
+
+
+    <!--
+  <footer class="main-footer">
+    <div class="container">
+      <ul class="social media">
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#facebook"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#twitter"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#instagram"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#tumblr"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#pinterest"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#youtube"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#vimeo"></use>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><svg>
+              <use href="images/sprites.svg#wechat"></use>
+            </svg></a>
+        </li>
+      </ul>
+      <div class="footer-nav-container">
+        <nav class="footer-nav">
+          <a href="#">{{"BCM" | translate}}</a>
+          <a href="#">{{"AUS" | translate}}</a>
+          <a href="#">{{"CUS" | translate}}</a>
+          <a href="#">{{"PRV" | translate}}</a>
+          <a href="#">{{"TRM" | translate}}</a>
+          <a href="#">{{"CTR" | translate}}</a>
+          <a href="#">{{"VDDD" | translate}}</a>
+        </nav>
+      </div>
+      <ul class="footer-bottom">
+        <li>
+          <a href="#">Ⓒ 2022 Animal Paws</a>
+        </li>
+        <li>
+          <a href="#">Ⓒ 2022 Neoritic Jac Devs. {{"COPY" | translate}}</a>
+        <li>
+          <a href="https://github.com/nataliakiselev">{{"DSG" | translate}} Natalia Kiselev</a>
+        </li>
+      </ul>
+    </div>
+  </footer>-->
+</body>
+</html>

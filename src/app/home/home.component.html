@@ -17,18 +17,24 @@
           <img class="logo" src="../../assets/img/logo.png" alt="AP LOGO">
         </a>
       </div>
-      <nav class="top-row-toolbar">
-        <a href="#"><fa-icon [icon]="faMoon"></fa-icon></a>
-        <a><button (click)="changeLanguage('en')" class="btnlang"><fa-icon [icon]="faLanguage"></fa-icon></button></a>
-        <a routerLink="/SignUp"><fa-icon [icon]="faUser"></fa-icon></a>
-      </nav>
+      <!--Nav By Action-->
+        <nav class="top-row-toolbar">
+          <a href="#"><fa-icon [icon]="faMoon"></fa-icon></a>
+          <a><button (click)="changeLanguage('en')" class="btnlang"><fa-icon [icon]="faLanguage"></fa-icon></button></a>
+          <a routerLink="/SignIn"><fa-icon [icon]="faUser"></fa-icon></a>
+          <a routerLink="/SignUp">Inscribirse</a>
+
+        </nav>
+      <!-- End Nav By Action-->
     </div>
-    <nav class="main-nav">
-      <a href="#"><fa-icon [icon]="faNewspaper"></fa-icon> {{"UPD" | translate}}</a>
-      <a href="#"><fa-icon [icon]="faWrench"></fa-icon> {{"FUN" | translate}}</a>
-      <a href="#"><fa-icon [icon]="faHashtag"></fa-icon> {{"AS" | translate}}</a>
-      <a href="#"><fa-icon [icon]="faEyeslash"></fa-icon> {{"Preview" | translate}}</a>
-    </nav>
+    <!--Navigation Page-->
+      <nav class="main-nav">
+        <a href="#"><fa-icon [icon]="faNewspaper"></fa-icon> {{"UPD" | translate}}</a>
+        <a href="#"><fa-icon [icon]="faWrench"></fa-icon> {{"FUN" | translate}}</a>
+        <a href="#"><fa-icon [icon]="faHashtag"></fa-icon> {{"AS" | translate}}</a>
+        <a href="#"><fa-icon [icon]="faEyeslash"></fa-icon> {{"Preview" | translate}}</a>
+      </nav>
+    <!--End Navigation Page-->
   </header>
   <main>
     <section class="hero-slider">

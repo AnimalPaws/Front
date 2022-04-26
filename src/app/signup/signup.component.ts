@@ -12,11 +12,11 @@ import { TranslateConfigService } from '../services/translate-config.service';
 import { from } from 'rxjs';
 
 @Component({
-  selector: 'app-sign',
-  templateUrl: './sign.component.html',
-  styleUrls: ['./sign.component.scss']
+  selector: 'app-signup',
+  templateUrl: './signup.component.html',
+  styleUrls: ['./signup.component.scss']
 })
-export class SignComponent implements OnInit {
+export class SignupComponent implements OnInit {
   faLanguage = faLanguage;
   faMoon = faMoon;
   faUser = faUser;
@@ -28,13 +28,14 @@ export class SignComponent implements OnInit {
   a = 2;
   b = 1;
 
-  constructor(public translate:TranslateService, private translateConfigService: TranslateConfigService ) { 
+  constructor(public translate:TranslateService, private translateConfigService: TranslateConfigService) { 
     this.translate.addLangs(['es', 'en']);
     this.translate.setDefaultLang('en');
   }
 
   ngOnInit(): void {
   }
+  
   changeValue1(){
     this.a = this.a + 1;
   }
@@ -45,4 +46,5 @@ export class SignComponent implements OnInit {
   changeLanguage(type: string) {
     this.translateConfigService.changeLanguage(type);
   }
+
 }

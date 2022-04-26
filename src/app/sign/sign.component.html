@@ -1,1 +1,37 @@
-<p>sign works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="page-header">
+    <div class="top-row">
+        <div class="menu-wrap">
+        <a href="#" class="menu-switcher" aria-label="Toggle main menu">
+        </a>
+        </div>
+        <div class="logo-wrap">
+            <a href="#" class="logo">
+            <img class="logo" src="../../assets/img/logo.png" alt="AP LOGO">
+            </a>
+        </div>
+    <nav class="top-row-toolbar">
+        <a href="#"><fa-icon [icon]="faMoon"></fa-icon></a>
+        <a><button (click)="changeLanguage('en')" class="btnlang"><fa-icon [icon]="faLanguage"></fa-icon></button></a>
+        <a routerLink="/SignUp"><fa-icon [icon]="faUser"></fa-icon></a>
+    </nav>
+    </div>
+    <nav class="main-nav">
+      <a href="#"><fa-icon [icon]="faNewspaper"></fa-icon> {{"UPD" | translate}}</a>
+      <a href="#"><fa-icon [icon]="faWrench"></fa-icon> {{"FUN" | translate}}</a>
+      <a href="#"><fa-icon [icon]="faHashtag"></fa-icon> {{"AS" | translate}}</a>
+      <a href="#"><fa-icon [icon]="faEyeslash"></fa-icon> {{"Preview" | translate}}</a>
+    </nav>
+  </header>
+    
+</body>
+</html>
