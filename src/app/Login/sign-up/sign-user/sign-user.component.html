@@ -1,0 +1,46 @@
+<form action="index.html" autocomplete="off" #userAccount="ngForm" (ngSubmit)="onSubmit(userAccount.value)">
+  <h3 class="title">Crea Tu Cuenta</h3>
+          <div class="input-container">
+            <h5>Primer Nombre</h5>
+            <div class="none"></div>
+            <input type="text" name="first_name" class="input" ngModel/>
+            <label></label>
+            <h5>Segundo Nombre</h5>
+            <div class="none"></div>
+            <input type="text" name="middle_name" class="input" ngModel/>
+            <label></label>
+            <h5>Primer Apellido</h5>
+            <div class="none"></div>
+            <input type="text" name="surname" class="input" ngModel/>
+            <label></label>
+            <h5>Segundo Apellido</h5>
+            <div class="none"></div>
+            <input type="text" name="last_name" class="input" ngModel/>
+            <label></label>
+            <h5>Sexo</h5>
+            <div class="none"></div>
+            <input type="text" name="sex" class="input" ngModel/>
+            <label></label>
+            <h5>Email</h5>
+            <div class="none"></div>
+            <input type="email" name="email" class="input" ngModel/>
+            <label></label>
+            <h5>Contraseña</h5>
+            <div class="none"></div>
+            <input type="password" name="password" class="input" ngModel/>
+            <label></label>
+            <h5>Celular</h5>
+            <div class="none"></div>
+            <input type="text" name="phone_number" class="input" ngModel/>
+            <label></label>
+            <h5>Departamento</h5>
+            <div class="none"></div>
+            <input type="text" name="department" class="input" ngModel/>
+            <label></label>
+            <h5>Ciudad</h5>
+            <div class="none"></div>
+            <input type="text" name="city" class="input" ngModel/>
+            <label></label>
+            <input type="submit" value="Crear Cuenta" class="btn" routerLink="/SignUser"/>
+          </div>
+</form>
