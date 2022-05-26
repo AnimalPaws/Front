@@ -10,10 +10,7 @@ import { AuthService } from '../../services/auth.service';
 })
 export class SignInComponent implements OnInit {
 
-  user = {
-    email: 'testmail@test.com',
-    password: 'holaxd'  
-  }
+  user = {email: [], password: []}
 
   constructor(private _LoadScripts:LoadscriptsService, private authService:AuthService, private router:Router) {
     _LoadScripts.Charge(["Login/sign"])

@@ -11,5 +11,8 @@ export class PostHomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  logOut(){
+    localStorage.removeItem('token')
+  }
 
 }
