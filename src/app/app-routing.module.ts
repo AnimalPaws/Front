@@ -10,6 +10,7 @@ import { SignUpComponent } from './Login/sign-up/sign-up.component';
 import { PreviewComponent } from './HomeScreen/preview/preview.component';
 import { SignUserComponent } from './Login/sign-up/sign-user/sign-user.component';
 import { PostHomeComponent } from './Posts/post-home/post-home.component';
+import { PostProfileComponent } from './Posts/post-profile/post-profile.component';
 import { ErrorComponent } from './error/error.component';
 import { AuthGuard } from './guards/auth.guard';
 
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'FirstPatch', component:FirstPatchComponent},
   {path: 'Preview', component:PreviewComponent},
   {path: 'Post', component:PostHomeComponent, canActivate: [AuthGuard]},
+  {path: 'Profile', component:PostProfileComponent},
   {path: '**', component: ErrorComponent}
 ];
 

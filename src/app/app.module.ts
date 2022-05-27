@@ -29,6 +29,7 @@ import { ChatComponent } from './HomeScreen/functions/chat/chat.component';
 import { AccountComponent } from './HomeScreen/functions/account/account.component';
 import { SignUserComponent } from './Login/sign-up/sign-user/sign-user.component';
 import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
+import { PostProfileComponent } from './Posts/post-profile/post-profile.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
     PostComponent,
     ChatComponent,
     AccountComponent,
-    SignUserComponent
+    SignUserComponent,
+    PostProfileComponent
   ],
   imports: [
     BrowserModule,

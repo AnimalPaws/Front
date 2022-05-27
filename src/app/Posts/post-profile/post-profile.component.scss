@@ -927,6 +927,11 @@ display: none;
 
 }
 
+.main-container{
+  border: 0px solid yellow;
+  height: auto;
+  width: 100%;
+}
 
 #contenido-section
 {
@@ -997,20 +1002,8 @@ overflow: auto;
   flex-direction: column;
   width: 80%;
   background-color: #181d2f;
-  border: 0px solid red;
 }
 
-
-.timeline-right{
-  border: 0px solid red;
-  width: 30%;
-}
-
-#main-anuncios{
-  display: flex;
-  flex-grow: 1;
-  height: auto;
-}
 
 /*------------------------RESPONSIVE---------------------------------*/
 
