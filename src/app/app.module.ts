@@ -1,38 +1,43 @@
+// Angular Modules //
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// External Dependencies //
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
-import {HttpClientModule, HttpClient} from '@angular/common/http';
-import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 export function HttpLoaderFactory(http: HttpClient){
   return new  TranslateHttpLoader(http, './assets/lang/', '.json')
 }
-import { LoadscriptsService } from './services/loadscripts.service';
-import { AppRoutingModule } from './app-routing.module';
+// Services //
+import { LoadscriptsService } from './services/InterfaceServices/loadscripts.service';
+// Components //
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from '../app/HomeScreen/home/home.component';
-import { AboutComponent } from '../app/HomeScreen/about/about.component';
-import { ErrorComponent } from './error/error.component';
-import { PreviewComponent } from './HomeScreen/preview/preview.component';
-import { SignUpComponent } from './Login/sign-up/sign-up.component';
-import { SignInComponent } from './Login/sign-in/sign-in.component';
-import { FirstPatchComponent } from './Updates/first-patch/first-patch.component';
-import { SecondPatchComponent } from './Updates/second-patch/second-patch.component';
-import { PatchNotesComponent } from './Updates/patch-notes/patch-notes.component';
-import { FunctionsComponent } from './HomeScreen/functions/functions.component';
-import { PostHomeComponent } from './Posts/post-home/post-home.component';
-import { PostAdoptComponent } from './Posts/post-adopt/post-adopt.component';
-import { PostComponent } from './HomeScreen/functions/post/post.component';
-import { ChatComponent } from './HomeScreen/functions/chat/chat.component';
-import { AccountComponent } from './HomeScreen/functions/account/account.component';
-import { SignUserComponent } from './Login/sign-up/sign-user/sign-user.component';
-import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
-import { PostProfileComponent } from './Posts/post-profile/post-profile.component';
+import { HomeComponent } from './components/HomeScreen/home/home.component';
+import { AboutComponent } from './components/HomeScreen/about/about.component';
+import { ErrorComponent } from './components/error/error.component';
+import { PreviewComponent } from './components/HomeScreen/preview/preview.component';
+import { SignUpComponent } from './components/Login/sign-up/sign-up.component';
+import { SignInComponent } from './components/Login/sign-in/sign-in.component';
+import { FirstPatchComponent } from './components/Updates/first-patch/first-patch.component';
+import { SecondPatchComponent } from './components/Updates/second-patch/second-patch.component';
+import { PatchNotesComponent } from './components/Updates/patch-notes/patch-notes.component';
+import { FunctionsComponent } from './components/HomeScreen/functions/functions.component';
+import { PostHomeComponent } from './components/Posts/post-home/post-home.component';
+import { PostAdoptComponent } from './components/Posts/post-adopt/post-adopt.component';
+import { PostComponent } from './components/HomeScreen/functions/post/post.component';
+import { ChatComponent } from './components/HomeScreen/functions/chat/chat.component';
+import { AccountComponent } from './components/HomeScreen/functions/account/account.component';
+import { SignUserComponent } from './components/Login/sign-up/sign-user/sign-user.component';
+import { PostProfileComponent } from './components/Posts/post-profile/post-profile.component';
 
 @NgModule({
   declarations: [
+    // Components //
     AppComponent,
     HomeComponent,
     AboutComponent,
@@ -53,11 +58,13 @@ import { PostProfileComponent } from './Posts/post-profile/post-profile.componen
     PostProfileComponent
   ],
   imports: [
+    // Angular Imports //
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
+    // Dependencies Imports //
         HttpClientModule,
         FontAwesomeModule,
         TranslateModule.forRoot({
@@ -69,6 +76,7 @@ import { PostProfileComponent } from './Posts/post-profile/post-profile.componen
         })
   ],
   providers: [
+    // Dependencies Providers //
     {provide: JWT_OPTIONS, useValue: JWT_OPTIONS},
     LoadscriptsService,
     JwtHelperService
