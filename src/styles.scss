@@ -1,1 +1,106 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/theming";
+@import "primeflex/primeflex.css";
+@include mat-core();
+
+$mat-primary-scheme: (
+  100: #121212,
+  500: #121212,
+  700: #121212,
+  contrast: (
+    100: rgba(0, 0, 0, 0.87),
+    500: #ffffff,
+    700: #ffffff,
+  ),
+);
+$mat-accent-scheme: (
+  100: #ff80ab,
+  500: #ff4081,
+  700: #f50057,
+  contrast: (
+    100: rgba(0, 0, 0, 0.87),
+    500: rgba(0, 0, 0, 0.87),
+    700: #ffffff,
+  ),
+);
+$mat-primary-palette: mat-palette($mat-primary-scheme);
+$mat-accent-palette: mat-palette($mat-accent-scheme);
+
+$app-light-theme: mat-light-theme($mat-primary-palette, $mat-accent-palette);
+
+.light-mode {
+  @include angular-material-theme($app-light-theme);
+}
+
+$app-dark-theme: mat-dark-theme($mat-primary-palette, $mat-accent-palette);
+
+.dark-mode {
+  @include angular-material-theme($app-dark-theme);
+  background-color: #222222;
+  color: #fff;
+}
+.dark-mode{
+  margin: 0;
+  padding: 0;
+}
+.dark-mode .logo{
+  background-color: #121212;
+}
+.dark-mode .top-row {
+  background-color: #121212;
+  color: #fff;
+}
+.dark-mode .dark {
+  background-color: #121212;
+  color: #fff;
+}
+.dark-mode .featured-stories{
+  color: #fff;
+}
+.dark-mode .main-nav{
+  background-color: #121212;
+  color: #fff;
+}
+.dark-mode .performance-space{
+  color: #fff;
+}
+.dark-mode .award-winning{
+  color: #fff;
+}
+.dark-mode .newsletter{
+  color: #fff;
+}
+.dark-mode .email-input{
+  background-color: #121212;
+  color: #fff;
+}
+.dark-mode .newsletter-btn{
+  color: #fff;
+}
+.dark-mode .editorials{
+  color: #fff;
+}
+.dark-mode .follow-us{
+  color: #fff;
+}
+.dark-mode .join-us{
+  color: #fff;
+}
+.dark-mode .main-footer{
+  color: #fff;
+}
+.dark-mode .footer-nav-container{
+  color: #fff;
+}
+.dark-mode .footer-nav{
+  color: #fff;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
