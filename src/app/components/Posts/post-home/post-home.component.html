@@ -1,4 +1,5 @@
-<div id="contenido-section">
+<!--Inital Section-->
+<div id="content-section">
   <div class="container padd" x-data="{ rightSide: false, leftSide: false }">
       <div class="left-side" :class="{'active' : leftSide}">
           <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -6,50 +7,41 @@
       <path d="M19 12H5M12 19l-7-7 7-7"/>
     </svg>
         </div>
+
+
+        <!--Main Menu-->
         <div id="side-wrapper">
-          <div class="logo">Animal Paws</div>
+          <div class="logo"><img src="../../../../assets/img/HomeScreen/logo_ap.png" alt="" srcset=""></div>
           <div class="side-wrapper">
             <div class="side-title">MENU</div>
             <div class="side-menu">
               <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-                  <path d="M9 22V12h6v10" />
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.6 483.2 483.9 512 448.5 512H128.1C92.75 512 64.09 483.3 64.09 448V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5H575.8zM288 160C252.7 160 224 188.7 224 224C224 259.3 252.7 288 288 288C323.3 288 352 259.3 352 224C352 188.7 323.3 160 288 160zM256 320C211.8 320 176 355.8 176 400C176 408.8 183.2 416 192 416H384C392.8 416 400 408.8 400 400C400 355.8 364.2 320 320 320H256z"/></svg>
                 For You
               </a>
               <a href="#">
-                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                </svg>
-                Updates
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M384 160C366.3 160 352 145.7 352 128C352 110.3 366.3 96 384 96H544C561.7 96 576 110.3 576 128V288C576 305.7 561.7 320 544 320C526.3 320 512 305.7 512 288V205.3L342.6 374.6C330.1 387.1 309.9 387.1 297.4 374.6L191.1 269.3L54.63 406.6C42.13 419.1 21.87 419.1 9.372 406.6C-3.124 394.1-3.124 373.9 9.372 361.4L169.4 201.4C181.9 188.9 202.1 188.9 214.6 201.4L320 306.7L466.7 159.1L384 160z"/></svg>
+                Trend
               </a>
               <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                  <circle cx="12" cy="10" r="3" /></svg>
-                Functions
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 224c-79.37 0-191.1 122.7-191.1 200.2C64.02 459.1 90.76 480 135.8 480C184.6 480 216.9 454.9 256 454.9C295.5 454.9 327.9 480 376.2 480c44.1 0 71.74-20.88 71.74-55.75C447.1 346.8 335.4 224 256 224zM108.8 211.4c-10.37-34.62-42.5-57.12-71.62-50.12S-7.104 202 3.27 236.6C13.64 271.3 45.77 293.8 74.89 286.8S119.1 246 108.8 211.4zM193.5 190.6c30.87-8.125 46.37-49.1 34.5-93.37s-46.5-71.1-77.49-63.87c-30.87 8.125-46.37 49.1-34.5 93.37C127.9 170.1 162.5 198.8 193.5 190.6zM474.9 161.3c-29.12-6.1-61.25 15.5-71.62 50.12c-10.37 34.63 4.75 68.37 33.87 75.37c29.12 6.1 61.12-15.5 71.62-50.12C519.1 202 503.1 168.3 474.9 161.3zM318.5 190.6c30.1 8.125 65.62-20.5 77.49-63.87c11.87-43.37-3.625-85.25-34.5-93.37c-30.1-8.125-65.62 20.5-77.49 63.87C272.1 140.6 287.6 182.5 318.5 190.6z"/></svg>
+                Adoptions
               </a>
               <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
-                  <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
-                </svg>
-                Preview
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M199.1 272C199.1 263.2 207.2 256 215.1 256C224.8 256 231.1 263.2 231.1 272C231.1 280.8 224.8 288 215.1 288C207.2 288 199.1 280.8 199.1 272zM312 272C312 280.8 304.8 288 296 288C287.2 288 280 280.8 280 272C280 263.2 287.2 256 296 256C304.8 256 312 263.2 312 272zM256.3-.0068C261.9-.0507 267.3 1.386 272.1 4.066L476.5 90.53C487.7 95.27 495.2 105.1 495.9 118.1C501.6 213.6 466.7 421.9 272.5 507.7C267.6 510.5 261.1 512.1 256.3 512C250.5 512.1 244.9 510.5 239.1 507.7C45.8 421.9 10.95 213.6 16.57 118.1C17.28 105.1 24.83 95.27 36.04 90.53L240.4 4.066C245.2 1.386 250.7-.0507 256.3-.0068H256.3zM223.1 208L159.1 144V272C159.1 325 202.1 368 255.1 368C309 368 352 325 352 272V144L288 208H223.1z"/></svg>
+                Entities
               </a>
               <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <path d="M21 15l-5-5L5 21" />
-                </svg>
-                Login
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M288 208C288 216.8 280.8 224 272 224C263.2 224 255.1 216.8 255.1 208C255.1 199.2 263.2 192 272 192C280.8 192 288 199.2 288 208zM256.3-.0068C261.9-.0507 267.3 1.386 272.1 4.066L476.5 90.53C487.7 95.27 495.2 105.1 495.9 118.1C501.6 213.6 466.7 421.9 272.5 507.7C267.6 510.5 261.1 512.1 256.3 512C250.5 512.1 244.9 510.5 239.1 507.7C45.8 421.9 10.95 213.6 16.57 118.1C17.28 105.1 24.83 95.27 36.04 90.53L240.4 4.066C245.2 1.386 250.7-.0507 256.3-.0068H256.3zM160.9 286.2L143.1 320L272 384V320H320C364.2 320 400 284.2 400 240V208C400 199.2 392.8 192 384 192H320L312.8 177.7C307.4 166.8 296.3 160 284.2 160H239.1V224C239.1 259.3 211.3 288 175.1 288C170.8 288 165.7 287.4 160.9 286.2H160.9zM143.1 176V224C143.1 241.7 158.3 256 175.1 256C193.7 256 207.1 241.7 207.1 224V160H159.1C151.2 160 143.1 167.2 143.1 176z"/></svg>
+                Accounts
               </a>
             </div>
           </div>
+
+
+          <!--Create Menu-->
           <div class="side-wrapper">
-            <div class="side-title">YOUR FAVOURITE</div>
+            <div class="side-title">Create</div>
             <div class="side-menu">
               <a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472.11 472.11">
@@ -60,7 +52,7 @@
                   <path d="M364.07 216.11a63.94 63.94 0 00-28.26-53.1 55.95 55.95 0 00-43.74-90.9c-.8 0-1.6.1-2.4.12a56 56 0 10-107.2 0c-.8 0-1.6-.12-2.4-.12a55.95 55.95 0 00-43.75 90.9 64 64 0 000 106.2 55.95 55.95 0 0043.75 90.9h112a55.95 55.95 0 0043.74-90.9 63.94 63.94 0 0028.26-53.1z" fill="#88b337" />
                   <path d="M297.72 178.46a8 8 0 00-11.31 0l-42.34 42.34V104.11a8 8 0 00-16 0v56.7l-36.35-36.35a8 8 0 00-11.31 11.3l47.66 47.67V292.8l-34.35-34.34a8 8 0 00-11.31 11.3l45.66 45.67V464.1a8 8 0 0016 0V242.87c.6-.3 1.15-.66 1.65-1.1l52-52a8 8 0 000-11.31z" fill="#6a9923" />
                   <path d="M372.07 472.11h-272a8 8 0 010-16h272a8 8 0 010 16z" fill="#595959" /></svg>
-                Foresto
+                Create Post
               </a>
               <a href="#">
                 <svg viewBox="0 0 56 58" width="512" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +68,7 @@
                     <path d="M34.6 14c-2 0-3.8-.9-5.2-2.2a4 4 0 00-3.4-1.1c-2 .4-3.1 2.7-3.1 2.8a1 1 0 01-1.8-1s1.6-3.1 4.5-3.8c1.8-.3 3.6.3 5 1.5 2.1 1.8 3.6 2 4.4 1.9.4-.1.8-.3 1.1-.6a1 1 0 011.7 1c-.8 1-2 1.6-3.2 1.6z" fill="#7f6e5d" />
                   </g>
                 </svg>
-                Birds
+                Settings
               </a>
               <a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -206,27 +198,23 @@
                 Aysenur Turk — @AysnrTrkk
               </span>
             </a>
-          </div><!--fin del side-wrapper-->
+          </div>
         </div>
       </div>
 
 
-
+      <!--Main Section-->
       <div class="main">
-        <div class="search-bar">
-          <input type="text" placeholder="Search" />
-        </div>
-
-        <div id="main-anuncios"><!--para organizar los anuncios-->
+        <div class="main-post">
           <div class="timeline-right">
             <div class="status box">
             </div>
             <div class="album box">
               <div class="status-main">
-                <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
+                <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Dog-512.png" class="status-img" />
                 <div class="album-detail">
-                  <div class="album-title"><strong>Quan Ha</strong> create new <span>album</span></div>
-                  <div class="album-date">6 hours ago</div>
+                  <div class="album-title"><strong>User </strong>Posted A New <span>Update</span></div>
+                  <div class="album-date">Long Time Ago</div>
                 </div>
                 <button class="intro-menu"></button>
               </div>
@@ -241,220 +229,27 @@
               </div>
               <div class="album-actions">
                 <a href="#" class="album-action">
-                  <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
-                  </svg>
-                  87
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/></svg>
+                  --
                 </a>
                 <a href="#" class="album-action">
-                  <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
-                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-                  </svg>
-                  20
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z"/></svg>
+                  --
                 </a>
                 <a href="#" class="album-action">
-                  <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
-                    <path d="M17 1l4 4-4 4" />
-                    <path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4" />
-                    <path d="M21 13v2a4 4 0 01-4 4H3" />
-                  </svg>
-                  13
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM407.4 331.5C412.4 319.7 400.4 309 388.1 312.8C348.4 324.9 303.7 331.8 256.3 331.8C208.9 331.8 164.1 324.9 124.5 312.8C112.2 309 100.2 319.7 105.2 331.5C130.1 390.6 188.4 432 256.3 432C324.2 432 382.4 390.6 407.4 331.5H407.4zM152.8 124.6L136.2 159.3L98.09 164.3C95.03 164.7 92.48 166.8 91.52 169.8C90.57 172.7 91.39 175.9 93.62 178L121.5 204.5L114.5 242.3C113.1 245.4 115.2 248.4 117.7 250.2C120.2 252.1 123.5 252.3 126.2 250.8L159.1 232.5L193.8 250.8C196.5 252.3 199.8 252.1 202.3 250.2C204.8 248.4 206 245.4 205.5 242.3L198.5 204.5L226.4 178C228.6 175.9 229.4 172.7 228.5 169.8C227.5 166.8 224.1 164.7 221.9 164.3L183.8 159.3L167.2 124.6C165.9 121.8 163.1 120 159.1 120C156.9 120 154.1 121.8 152.8 124.6V124.6zM344.8 124.6L328.2 159.3L290.1 164.3C287 164.7 284.5 166.8 283.5 169.8C282.6 172.7 283.4 175.9 285.6 178L313.5 204.5L306.5 242.3C305.1 245.4 307.2 248.4 309.7 250.2C312.2 252.1 315.5 252.3 318.2 250.8L352 232.5L385.8 250.8C388.5 252.3 391.8 252.1 394.3 250.2C396.8 248.4 398 245.4 397.5 242.3L390.5 204.5L418.4 178C420.6 175.9 421.4 172.7 420.5 169.8C419.5 166.8 416.1 164.7 413.9 164.3L375.8 159.3L359.2 124.6C357.9 121.8 355.1 120 352 120C348.9 120 346.1 121.8 344.8 124.6H344.8z"/></svg>
+                  --
                 </a>
               </div>
             </div>
-          </div>
-
-<!--------------------------PRUEEBAA---------------------->
-<div class="timeline-right">
-  <div class="status box">
-  </div>
-  <div class="album box">
-    <div class="status-main">
-      <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
-      <div class="album-detail">
-        <div class="album-title"><strong>Quan Ha</strong> create new <span>album</span></div>
-        <div class="album-date">6 hours ago</div>
-      </div>
-      <button class="intro-menu"></button>
-    </div>
-    <div class="album-content">When the bass drops, so do my problems.
-      <div class="album-photos">
-        <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" alt="" class="album-photo" />
-        <div class="album-right">
-          <img src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="album-photo" />
-          <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" class="album-photo" />
-        </div>
-      </div>
-    </div>
-    <div class="album-actions">
-      <a href="#" class="album-action">
-        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-          <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
-        </svg>
-        87
-      </a>
-      <a href="#" class="album-action">
-        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
-          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-        </svg>
-        20
-      </a>
-      <a href="#" class="album-action">
-        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
-          <path d="M17 1l4 4-4 4" />
-          <path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4" />
-          <path d="M21 13v2a4 4 0 01-4 4H3" />
-        </svg>
-        13
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="timeline-right">
-  <div class="status box">
-  </div>
-  <div class="album box">
-    <div class="status-main">
-      <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
-      <div class="album-detail">
-        <div class="album-title"><strong>Quan Ha</strong> create new <span>album</span></div>
-        <div class="album-date">6 hours ago</div>
-      </div>
-      <button class="intro-menu"></button>
-    </div>
-    <div class="album-content">When the bass drops, so do my problems.
-      <div class="album-photos">
-        <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" alt="" class="album-photo" />
-        <div class="album-right">
-          <img src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="album-photo" />
-          <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" class="album-photo" />
-        </div>
-      </div>
-    </div>
-    <div class="album-actions">
-      <a href="#" class="album-action">
-        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-          <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
-        </svg>
-        87
-      </a>
-      <a href="#" class="album-action">
-        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
-          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-        </svg>
-        20
-      </a>
-      <a href="#" class="album-action">
-        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
-          <path d="M17 1l4 4-4 4" />
-          <path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4" />
-          <path d="M21 13v2a4 4 0 01-4 4H3" />
-        </svg>
-        13
-      </a>
-    </div>
-  </div>
-</div>
-<div class="timeline-right">
-  <div class="status box">
-  </div>
-  <div class="album box">
-    <div class="status-main">
-      <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
-      <div class="album-detail">
-        <div class="album-title"><strong>Quan Ha</strong> create new <span>album</span></div>
-        <div class="album-date">6 hours ago</div>
-      </div>
-      <button class="intro-menu"></button>
-    </div>
-    <div class="album-content">When the bass drops, so do my problems.
-      <div class="album-photos">
-        <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" alt="" class="album-photo" />
-        <div class="album-right">
-          <img src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="album-photo" />
-          <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" class="album-photo" />
-        </div>
-      </div>
-    </div>
-    <div class="album-actions">
-      <a href="#" class="album-action">
-        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-          <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
-        </svg>
-        87
-      </a>
-      <a href="#" class="album-action">
-        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
-          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-        </svg>
-        20
-      </a>
-      <a href="#" class="album-action">
-        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
-          <path d="M17 1l4 4-4 4" />
-          <path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4" />
-          <path d="M21 13v2a4 4 0 01-4 4H3" />
-        </svg>
-        13
-      </a>
-    </div>
-  </div>
-</div><div class="timeline-right">
-  <div class="status box">
-  </div>
-  <div class="album box">
-    <div class="status-main">
-      <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
-      <div class="album-detail">
-        <div class="album-title"><strong>Quan Ha</strong> create new <span>album</span></div>
-        <div class="album-date">6 hours ago</div>
-      </div>
-      <button class="intro-menu"></button>
-    </div>
-    <div class="album-content">When the bass drops, so do my problems.
-      <div class="album-photos">
-        <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" alt="" class="album-photo" />
-        <div class="album-right">
-          <img src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="album-photo" />
-          <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" class="album-photo" />
-        </div>
-      </div>
-    </div>
-    <div class="album-actions">
-      <a href="#" class="album-action">
-        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-          <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
-        </svg>
-        87
-      </a>
-      <a href="#" class="album-action">
-        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
-          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-        </svg>
-        20
-      </a>
-      <a href="#" class="album-action">
-        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
-          <path d="M17 1l4 4-4 4" />
-          <path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4" />
-          <path d="M21 13v2a4 4 0 01-4 4H3" />
-        </svg>
-        13
-      </a>
-    </div>
-  </div>
-</div>
-<!---------------------TERMINA PRUEBA------------>
-
-
+          </div>  
         </div>
       </div>
 
 
-
+      <!--User UI Section-->
       <div class="right-side" :class="{ 'active': rightSide }">
-        <div id="contenido-chats">
+        <div id="content-chats">
           <div class="account">
             <button class="account-button">
               <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
@@ -467,39 +262,23 @@
                 <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" />
               </svg>
             </button>
-            <span class="account-user">Quan Ha
-              <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt="" class="account-profile" alt="">
-              <span>▼</span>
+            <span class="account-user">You're Guest
+              <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="" class="account-profile" alt="">
             </span>
           </div>
+
+
+          <!--ADS Section-->
           <div id="wrapp">
-            <div class="stories">
-              <div class="side-title">STORIES</div>
-              <div class="user">
-                <img src="https://pbs.twimg.com/profile_images/1102351320567164931/ZCkJgJIH.png" alt="" class="user-img">
-                <div class="username">Lisandro Matos
-                  <div class="album-date">12 hours ago</div>
-                </div>
-              </div>
-              <div class="user">
-                <img src="https://pbs.twimg.com/profile_images/1153966095444992000/1lpIyHaQ.jpg" alt="" class="user-img">
-                <div class="username">Gvozden Boskovsky
-                  <div class="album-date">29 minutes ago</div>
-                </div>
-              </div>
-              <div class="user">
-                <img src="https://images.unsplash.com/photo-1565464027194-7957a2295fb7?ixlib=rb-1.2.1&auto=format&fit=crop&w=3500&q=80" alt="" class="user-img">
-                <div class="username">Hnek Fortuin
-                  <div class="album-date">3 hours ago</div>
-                </div>
-              </div>
-              <div class="user">
-                <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="" class="user-img">
-                <div class="username">Lubomir Dvorak
-                  <div class="album-date">18 hours ago</div>
-                </div>
-              </div>
+            <div class="stories ads">
+              <div class="side-title">ADS</div>
+              <div>
+                <h3></h3>    
+                <img src="" alt="">
             </div>
+
+
+            <!--Chat Section-->
             <div class="contacts">
               <div class="side-title">CONTACTS</div>
               <div class="user">

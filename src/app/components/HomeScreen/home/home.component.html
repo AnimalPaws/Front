@@ -17,18 +17,16 @@
 		</a>
 		<img class="logo" src="../../../../assets/img/HomeScreen/logo_ap.png" alt="AnimalPaws Logo"/>
 		<div class="header-menu">
-			<a routerLink="/PatchNotes">{{"UPD" | translate}}</a>
-			<a routerLink="/Functions">{{"FUN" | translate}}</a>
-			<a routerLink="/Preview">{{"Preview" | translate}}</a>
-			<a routerLink="/SignUp">{{"LOG" | translate}}</a>
+			<a routerLink="/PatchNotes">{{"updates" | translate}}</a>
+			<a routerLink="/Functions">{{"functions" | translate}}</a>
+			<a routerLink="/Preview">{{"preview" | translate}}</a>
+			<a routerLink="/Login">{{"login" | translate}}</a>
 		</div>
 		<div class="header-icons">
 			<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
 			</svg>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-				<path d="M437.02 330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521 243.251 404 198.548 404 148 404 66.393 337.607 0 256 0S108 66.393 108 148c0 50.548 25.479 95.251 64.262 121.962-36.21 12.495-69.398 33.136-97.281 61.018C26.629 379.333 0 443.62 0 512h40c0-119.103 96.897-216 216-216s216 96.897 216 216h40c0-68.38-26.629-132.667-74.98-181.02zM256 256c-59.551 0-108-48.448-108-108S196.449 40 256 40s108 48.448 108 108-48.449 108-108 108z" />
-			</svg>
+		<a><button><mat-slide-toggle (click)="toggleDarkMode()" [(ngModel)]="isDarkMode"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg></mat-slide-toggle></button></a>
 		<a><button (click)="changeLanguage('en')"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM57.71 192.1L67.07 209.4C75.36 223.9 88.99 234.6 105.1 239.2L162.1 255.7C180.2 260.6 192 276.3 192 294.2V334.1C192 345.1 198.2 355.1 208 359.1C217.8 364.9 224 374.9 224 385.9V424.9C224 440.5 238.9 451.7 253.9 447.4C270.1 442.8 282.5 429.1 286.6 413.7L289.4 402.5C293.6 385.6 304.6 371.1 319.7 362.4L327.8 357.8C342.8 349.3 352 333.4 352 316.1V307.9C352 295.1 346.9 282.9 337.9 273.9L334.1 270.1C325.1 261.1 312.8 255.1 300.1 255.1H256.1C245.9 255.1 234.9 253.1 225.2 247.6L190.7 227.8C186.4 225.4 183.1 221.4 181.6 216.7C178.4 207.1 182.7 196.7 191.7 192.1L197.7 189.2C204.3 185.9 211.9 185.3 218.1 187.7L242.2 195.4C250.3 198.1 259.3 195 264.1 187.9C268.8 180.8 268.3 171.5 262.9 165L249.3 148.8C239.3 136.8 239.4 119.3 249.6 107.5L265.3 89.12C274.1 78.85 275.5 64.16 268.8 52.42L266.4 48.26C262.1 48.09 259.5 48 256 48C163.1 48 84.4 108.9 57.71 192.1L57.71 192.1zM437.6 154.5L412 164.8C396.3 171.1 388.2 188.5 393.5 204.6L410.4 255.3C413.9 265.7 422.4 273.6 433 276.3L462.2 283.5C463.4 274.5 464 265.3 464 256C464 219.2 454.4 184.6 437.6 154.5H437.6z"/></svg></button></a>
 		</div>
 	</div>
@@ -45,7 +43,7 @@
       <!--Content before waves-->
       <div class="inner-header flex">
       <!--Just the logo.. Don't mind this-->
-      <h1 class="ho">{{"VD" | translate}}</h1>
+      <h1 class="ho">{{"welcome_ap" | translate}}</h1>
       </div>
       <!--Waves Container-->
       <div>
@@ -59,11 +57,11 @@
       <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
       <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
       <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-      </g>
+      </g>  
       </svg>
       </div>
       <!--Waves end-->
-      <div id="btn1"><button class="button" style="vertical-align:middle"><span><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">{{"BTNL" | translate}}</a></span></button></div>
+      <div id="btn1"><button class="button" style="vertical-align:middle"><span><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">{{"take_look" | translate}}</a></span></button></div>
       
       </div>
       <!--Header ends-->
@@ -72,29 +70,29 @@
     <section class="performance-space">
       <div class="container">
         <header class="module-header">
-          <h2>{{"FUC" | translate}}</h2>
-          <span class="sub-title">{{"FUCL" | translate}}</span>
+          <h2>{{"our_functions" | translate}}</h2>
+          <span class="sub-title">{{"evr_makes" | translate}}</span>
         </header>
         <ul class="articles">
           <li class="article ">
             <div class="poster-container">
-              <a href="#"><img class="poster" src="../../../../assets/img/HomeScreen/adopt_sys.png" alt="Post System"></a>
+              <a routerLink="/AdoptInfo"><img class="poster" src="../../../../assets/img/HomeScreen/adopt_sys.png" alt="Post System"></a>
             </div>
-            <h3 class="post-title"><a href="#"><strong>{{"POS" | translate}}</strong></a></h3>
-            <p>{{"POST" | translate}}</p>
+            <h3 class="post-title"><a routerLink="/AdoptInfo"><strong>{{"adopt_sys" | translate}}</strong></a></h3>
+            <p>{{"adopt_sys" | translate}}</p>
           </li>
           <li class="article ">
             <div class="poster-container">
-              <a href="#"><img class="poster" src="../../../../assets/img/HomeScreen/entities_sys.png" alt="Role System"></a>
+              <a routerLink="/EntitiesInfo"><img class="poster" src="../../../../assets/img/HomeScreen/entities_sys.png" alt="Role System"></a>
             </div>
-            <h3 class="post-title"><a href="#">{{"ROL" | translate}}</a></h3>
+            <h3 class="post-title"><a routerLink="/EntitiesInfo"><strong>{{"ROL" | translate}}</strong></a></h3>
             <p>{{"ROLE" | translate}}</p>
           </li>
           <li class="article">
             <div class="poster-container">
-              <a href="#"><img class="poster" src="../../../../assets/img/HomeScreen/help_sys.png" alt="Chat System"></a>
+              <a routerLink="/HelpInfo"><img class="poster" src="../../../../assets/img/HomeScreen/help_sys.png" alt="Chat System"></a>
             </div>
-            <h3 class="post-title"><a href="#">{{"CHAT" | translate}}</a></h3>
+            <h3 class="post-title"><a routerLink="/HelpInfo"><strong>{{"CHAT" | translate}}</strong></a></h3>
             <p>{{"CHATS" | translate}}</p>
           </li>
         </ul>
@@ -106,37 +104,37 @@
       <div class="container">
         <div class="first wrapper">
           <div class="editorial">
-            <h2 class="module-header">{{"ML" | translate}}</h2>
+            <h2 class="module-header">{{"bc_boost" | translate}}</h2>
             <div class="poster-container">
               <a href="#">
                 <img class="poster" src="../../../../assets/img/HomeScreen/bas_boos.png">
               </a>
             </div>
-            <h3 class="post-title"><a href="#">{{"BF" | translate}}</a></h3>
-            <p>{{"PP" | translate}}</p>
-            <p>{{"PPA" | translate}}</p>
-            <p>{{"PPS" | translate}}</p>
-            <p>{{"PPD" | translate}}</p>
-            <h3 class="post-title"><a href="#">{{"DL" | translate}}</a></h3>
-            <button class="base-btn newsletter-btn">{{"SS" | translate}}</button>
+            <h3 class="post-title"><a href="#">{{"benefits" | translate}}</a></h3>
+            <p>{{"custom_int" | translate}}</p>
+            <p>{{"badges" | translate}}</p>
+            <p>{{"mor_help" | translate}}</p>
+            <p>{{"new_prof" | translate}}</p>
+            <h3 class="post-title"><a href="#">{{"5_usd" | translate}}</a></h3>
+            <button class="base-btn newsletter-btn">{{"subscribe" | translate}}</button>
           </div>
         </div>
         <div class="second wrapper">
           <div class="editorial">
-            <h2 class="module-header">{{"MLL" | translate}}</h2>
+            <h2 class="module-header">{{"prem_boost" | translate}}</h2>
             <div class="poster-container">
               <a href="#">
                 <img class="poster" src="../../../../assets/img/HomeScreen/prem_boos.png">
               </a>
             </div>
             <h3 class="post-title"><a
-                href="#">{{"BF" | translate}}</a></h3>
-            <p>{{"PPF" | translate}}</p>
-            <p>{{"PPG" | translate}}</p>
-            <p>{{"PPH" | translate}}</p>
-            <p>{{"PPJ" | translate}}</p>
-            <h3 class="post-title"><a href="#">{{"DLL" | translate}}</a></h3>
-            <button class="base-btn newsletter-btn">{{"SS" | translate}}</button>
+                href="#">{{"benefits" | translate}}</a></h3>
+            <p>{{"frame_imp" | translate}}</p>
+            <p>{{"ex_bad" | translate}}</p>
+            <p>{{"exce_help" | translate}}</p>
+            <p>{{"exc_ben" | translate}}</p>
+            <h3 class="post-title"><a href="#">{{"10_usd" | translate}}</a></h3>
+            <button class="base-btn newsletter-btn">{{"subscribe" | translate}}</button>
           </div>
         </div>
       </div>
@@ -146,8 +144,8 @@
     <section class='award-winning'>
       <div class="container">
         <header class="module-header">
-          <h2 class>{{"VIDD" | translate}}</h2>  
-          <span class="sub-title">{{"VIDL" | translate}}</span>
+          <h2 class>{{"videos" | translate}}</h2>  
+          <span class="sub-title">{{"learn_ap" | translate}}</span>
         </header>
         <ul class="articles">
           <li class="article">
@@ -155,7 +153,7 @@
               <a href="#"><video class="poster" src="#" autoplay muted></video></a>
               <span class="video-duration">03:47</span>
             </div>
-            <h3 class="post-title"><a href="#">{{"VD" | translate}}</a></h3>
+            <h3 class="post-title"><a href="#">{{"post" | translate}}</a></h3>
           </li>
           <li class="article">
             <div class="poster-container">

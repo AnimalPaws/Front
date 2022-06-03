@@ -34,6 +34,13 @@ import { ChatComponent } from './components/HomeScreen/functions/chat/chat.compo
 import { AccountComponent } from './components/HomeScreen/functions/account/account.component';
 import { SignUserComponent } from './components/Login/sign-up/sign-user/sign-user.component';
 import { PostProfileComponent } from './components/Posts/post-profile/post-profile.component';
+import { AdoptComponent } from './components/HomeScreen/functions/adopt/adopt.component';
+import { EntitiesComponent } from './components/HomeScreen/functions/entities/entities.component';
+import { HelpComponent } from './components/HomeScreen/functions/help/help.component';
+import { SignEntitiesComponent } from './components/Login/sign-entities/sign-entities.component';
+import { LoginOptionsComponent } from './components/Login/login-options/login-options.component';
+import { LoginEntitiesComponent } from './components/Login/login-entities/login-entities.component';
+import { AuthRoleComponent } from './components/Login/auth-role/auth-role.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +62,14 @@ import { PostProfileComponent } from './components/Posts/post-profile/post-profi
     ChatComponent,
     AccountComponent,
     SignUserComponent,
-    PostProfileComponent
+    PostProfileComponent,
+    AdoptComponent,
+    EntitiesComponent,
+    HelpComponent,
+    SignEntitiesComponent,
+    LoginOptionsComponent,
+    LoginEntitiesComponent,
+    AuthRoleComponent
   ],
   imports: [
     // Angular Imports //

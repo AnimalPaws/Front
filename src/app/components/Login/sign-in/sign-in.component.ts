@@ -22,7 +22,7 @@ export class SignInComponent implements OnInit {
     this.authService.signin(this.user).subscribe((res:any) =>{
       console.log(res);
       localStorage.setItem('token',res.token);
-      this.router.navigate(['Post'])
+      this.router.navigate(['Home'])
     })
   }
 }
