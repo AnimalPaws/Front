@@ -23,6 +23,7 @@ import { LoginOptionsComponent } from './components/Login/login-options/login-op
 import { SignInComponent } from './components/Login/sign-in/sign-in.component';
 import { SignUpComponent } from './components/Login/sign-up/sign-up.component';
 import { SignUserComponent } from './components/Login/sign-up/sign-user/sign-user.component';
+import { AuthRoleComponent } from './components/Login/auth-role/auth-role.component';
 // Posts Components //
 import { PostHomeComponent } from './components/Posts/post-home/post-home.component';
 import { PostProfileComponent } from './components/Posts/post-profile/post-profile.component';
@@ -57,6 +58,7 @@ const routes: Routes = [
   {path: 'Login/SignIn', component:SignInComponent},
   {path: 'Login/SignUp', component:SignUpComponent},
   {path: 'Login/SignUser', component:SignUserComponent},
+  {path: 'Login/Auth', component:AuthRoleComponent},
   // Posts Routes //
   {path: 'Home', component:PostHomeComponent, canActivate: [AuthGuard]},
   {path: 'Profile', component:PostProfileComponent},

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
   --dark-blue: #1F4782;
@@ -18,13 +19,16 @@
 }
 
 body {
-  background: linear-gradient(90deg, #CAF3F2 0%, #6FE3E1 100%);
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   justify-content: center;
   min-height: 100vh;
+  background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(#444cf7 0.65px, #e5e5f7 0.65px);
+background-size: 13px 13px;
 }
 
 .general-container {
@@ -72,19 +76,20 @@ body {
 }
 
 .content:nth-of-type(2) {
-  background-image: url('https://images.unsplash.com/photo-1444384851176-6e23071c6127?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80');
+  background-image: url('https://www.business2community.com/wp-content/uploads/2020/05/Web-Presence-COVID-19.jpg');
+  background-size: cover;
 }
 
 .content:nth-of-type(3) {
-  background-image: url('https://images.unsplash.com/photo-1482406611936-43ea538e39d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2110&q=80');
+  background-image: url('https://thumbs.dreamstime.com/b/online-registration-sign-up-concept-young-woman-signing-login-to-account-smartphone-app-user-interface-secure-password-194944775.jpg');
 }
 
 .content:nth-of-type(4) {
-  background-image: url('https://images.unsplash.com/photo-1483663167873-0cfcc893b78c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2096&q=80');
+  background-image: url('https://i.pinimg.com/originals/55/c7/8a/55c78aa24fb722350d6832301e973ba4.png');
 }
 
 .content:nth-of-type(5) {
-  background-image: url('https://images.unsplash.com/photo-1475116127127-e3ce09ee84e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+  background-image: url('https://www.clipartkey.com/mpngs/m/139-1397326_administration-illustration.png');
   margin-right: 0;
 }
 
@@ -99,14 +104,13 @@ body {
 .content:nth-of-type(4) .icon {
   color: var(--gray);
 }
-
 .content:nth-of-type(5) .icon {
   color: var(--golden);
 }
 
 .card-title {
   bottom: 1.2rem;
-  color: var(--white);
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
@@ -114,12 +118,14 @@ body {
   line-height: 1.1;
   opacity: 0;
   position: absolute;
-  text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
   transform: translateX(2rem);
   transition: 290ms cubic-bezier(0.05, 0.61, 0.41, 0.95) 300ms;
   transition-property: opacity, transform;
   user-select: none;
   white-space: nowrap;
+}
+a{
+  text-decoration: none;
 }
 
 .subtitle {
@@ -136,4 +142,36 @@ body {
 .radio:checked + .content > .card-title {
   opacity: 1;
   transform: translateX(0);
+}
+
+.qi
+{
+  border: 0px solid red;
+  display: none;
+}
+
+.p{
+  background: linear-gradient(to right,  #1fa2ff, #12d8fa);
+  height: 100%;
+  border: 0px solid red;
+  display: flex;
+  align-items: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  color: transparent;
+}
+
+
+
+.caja_div{
+  border: 0px solid red;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }

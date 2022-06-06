@@ -12,7 +12,7 @@ export class SignUpComponent implements OnInit {
 
   onSubmit(user: any)
   {
-    this.http.post('/api/User', user)
+    this.http.post('/auth/register/user', user)
     .subscribe((result) =>{
       console.warn("result", result)
     })
