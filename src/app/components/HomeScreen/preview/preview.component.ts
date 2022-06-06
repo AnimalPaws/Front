@@ -25,8 +25,8 @@ export class PreviewComponent implements OnInit {
     Swal.fire({
       icon: 'error',
       title: 'Oops...',
-      text: '¡No has iniciado sesion, ingresa para acceder a esta funcion!',
-      footer: '<a href=""></a><a href="/SignUp" style="color: #fff; text-decoration: none; background-color: #098ab5; padding: 9px;border-radius:5px;border:4px solid #03d3fa;">Registrarse</a><div style="width:10%;"></div><a href="/SignIn" style="color: #fff; text-decoration: none; background-color: #7066e0; padding: 9px; border-radius:5px;border:4px solid #a49df3;">Iniciar sesion</a>',
+      text: 'You are not logged in, log in to access this function!',
+      footer: '<a href=""></a><a href="/SignUp" style="color: #fff; text-decoration: none; background-color: #098ab5; padding: 9px;border-radius:5px;border:4px solid #03d3fa;">Sign Up</a><div style="width:10%;"></div><a href="/SignIn" style="color: #fff; text-decoration: none; background-color: #7066e0; padding: 9px; border-radius:5px;border:4px solid #a49df3;">Sign In</a>',
       showCancelButton: false,
       showConfirmButton: false,
       showClass: {

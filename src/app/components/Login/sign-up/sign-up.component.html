@@ -2,42 +2,42 @@
       <div class="row">
     <div class="col-md-12">
       <form action="index.html" autocomplete="off" #userAccount="ngForm" (ngSubmit)="onSubmit(userAccount.value)">
-        <h1> Crea Tu Cuenta </h1>
+        <h1> Create Your Account </h1>
         
         <fieldset>
           
-          <legend><span class="number">1</span> Informacion Personal</legend>
+          <legend><span class="number">1</span> Personal Information </legend>
         
-          <label for="name">Primer Nombre:</label>
+          <label for="name">First Name:</label>
           <input type="text" name="first_name" class="input" ngModel/>
         
-          <label for="email">Segundo Nombre:</label>
+          <label for="email">Middle Name:</label>
           <input type="text" name="middle_name" class="input" ngModel/>
 
-          <label for="email">Primer Apellido:</label>
+          <label for="email">Surname:</label>
           <input type="text" name="surname" class="input" ngModel/>
 
-          <label for="email">Segundo Apellido:</label>
+          <label for="email">Last Name:</label>
           <input type="text" name="last_name" class="input" ngModel/>
        
-          <label for="email">Sexo: (H: Hombre, M: Mujer)</label>
+          <label for="email">Sex: (H: Hombre, M: Mujer)</label>
           <input type="text" name="sex" class="input" ngModel/>
 
           <label for="email">Email:</label>
           <input type="email" name="email" class="input" ngModel/>
 
-          <label for="email">Contraseña:</label>
+          <label for="email">Password:</label>
           <input type="password" name="password" class="input" ngModel/>
 
-          <label for="email">Celular:</label>
+          <label for="email">Phone:</label>
           <input type="text" name="phone_number" class="input" ngModel/>
 
-          <label for="email">Departamento:</label>
+          <label for="email">Department:</label>
           <input type="text" name="department" class="input" ngModel/>
 
-          <label for="email">Ciudad:</label>
+          <label for="email">City:</label>
           <input type="text" name="city" class="input" ngModel/>
         
  
        
-          <input type="submit" value="Continua" class="btn" routerLink="/SignUser"/>
+          <input type="submit" value="Continue" class="btn" routerLink="/SignUser"/>
