@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoadscriptsService } from 'src/app/services/InterfaceServices/loadscripts.service';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { AuthService } from 'src/app/services/AuthServices/auth.service';
 @Component({
   selector: 'app-sign-in',
@@ -8,6 +9,8 @@ import { AuthService } from 'src/app/services/AuthServices/auth.service';
   styleUrls: ['./sign-in.component.scss']
 })
 export class SignInComponent implements OnInit {
+
+  faUser = faUser;
 
   user = {email: 'testmail@test.com', password: 'holaxd'}
 

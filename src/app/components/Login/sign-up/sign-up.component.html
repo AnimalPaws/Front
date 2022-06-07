@@ -1,43 +1,35 @@
-
-      <div class="row">
-    <div class="col-md-12">
-      <form action="index.html" autocomplete="off" #userAccount="ngForm" (ngSubmit)="onSubmit(userAccount.value)">
-        <h1> Create Your Account </h1>
-        
-        <fieldset>
-          
-          <legend><span class="number">1</span> Personal Information </legend>
-        
-          <label for="name">First Name:</label>
-          <input type="text" name="first_name" class="input" ngModel/>
-        
-          <label for="email">Middle Name:</label>
-          <input type="text" name="middle_name" class="input" ngModel/>
-
-          <label for="email">Surname:</label>
-          <input type="text" name="surname" class="input" ngModel/>
-
-          <label for="email">Last Name:</label>
-          <input type="text" name="last_name" class="input" ngModel/>
-       
-          <label for="email">Sex: (H: Hombre, M: Mujer)</label>
-          <input type="text" name="sex" class="input" ngModel/>
-
-          <label for="email">Email:</label>
-          <input type="email" name="email" class="input" ngModel/>
-
-          <label for="email">Password:</label>
-          <input type="password" name="password" class="input" ngModel/>
-
-          <label for="email">Phone:</label>
-          <input type="text" name="phone_number" class="input" ngModel/>
-
-          <label for="email">Department:</label>
-          <input type="text" name="department" class="input" ngModel/>
-
-          <label for="email">City:</label>
-          <input type="text" name="city" class="input" ngModel/>
-        
- 
-       
-          <input type="submit" value="Continue" class="btn" routerLink="/SignUser"/>
+<body>
+	<div class="container">
+		<div class="forms-container">
+		  <div class="signin-signup">
+			<form action="#" class="sign-in-form">
+			  <h2 class="title">Sign in</h2>
+			  <div class="input-field">
+				<i class="fas fa-user"></i>
+				<input type="text" placeholder="Username" />
+			  </div>
+			  <div class="input-field">
+				<i class="fas fa-lock"></i>
+				<input type="password" placeholder="Password" />
+			  </div>
+			  <input type="submit" value="Login" class="btn solid" />
+			</form>
+		</div>
+		<div class="panels-container">
+			<div class="panel left-panel">
+			  <div class="content">
+				<h3>New here ?</h3>
+				<p>
+				  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+				  ex ratione. Aliquid!
+				</p>
+				<button class="btn transparent" id="sign-up-btn">
+				  Sign up
+				</button>
+			  </div>
+			  <img src="../../../../assets/img/Login/cute-cat.png" class="image" alt="" />
+			</div>
+	</div>
+  </div>
+</div>
+</body>

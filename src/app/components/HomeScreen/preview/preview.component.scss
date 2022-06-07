@@ -23,8 +23,6 @@ background-color: #373e57;
 color: #ccc8db;
 }
 
-
-
 .left-side {
 width: 260px;
 border-right: 1px solid $border-color;
@@ -910,6 +908,7 @@ display: none;
 
 /*-------------daniela----------------*/
 .container{
+  width: 15%;
   border: 0px solid red ;
   background-color: $bg-color;
   display: flex;
