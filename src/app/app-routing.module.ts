@@ -60,7 +60,7 @@ const routes: Routes = [
   {path: 'Login/SignUser', component:SignUserComponent},
   {path: 'Login/Auth', component:AuthRoleComponent},
   // Posts Routes //
-  {path: 'Home', component:PostHomeComponent, /*canActivate: [AuthGuard]*/},
+  {path: 'Home', component:PostHomeComponent, canActivate: [AuthGuard]},
   {path: 'Profile', component:PostProfileComponent},
   // Error 404 Route //
   {path: '**', component: ErrorComponent}

@@ -57,11 +57,13 @@ a {
   background: linear-gradient(#1fa2ff, #12d8fa, #a6ffcb);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 .sp{
   background: linear-gradient(#ec6f66, #f3a183);;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 a,
 button {
@@ -190,7 +192,7 @@ h1 {
 
 .main-title {
   display: none;
-  
+
 }
 
 .top-row {
@@ -1338,6 +1340,7 @@ a:hover,
   background: linear-gradient(#1fa2ff, #12d8fa, #a6ffcb);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .slider-content{
@@ -1429,7 +1432,7 @@ a:hover,
   0% {
    transform: translate3d(-90px,0,0);
   }
-  100% { 
+  100% {
     transform: translate3d(85px,0,0);
   }
 }
@@ -1465,7 +1468,7 @@ a:hover,
 	top: 0;
 	left: 0;
   background: linear-gradient(to right, #4568dc, #b06ab3);
-	
+
 	@media (max-width: 575px) {
 		width: calc(100% + 20px);
     margin-left: -10px;
@@ -1475,7 +1478,7 @@ a:hover,
 		display: flex;
 		align-items: center;
 		margin-left: auto;
-		
+
 		@media screen and (max-width: 740px) {
 			display: none;
 		}
@@ -1510,3 +1513,56 @@ a:hover,
 	}
 }
 
+/*--------------------ANGIE DANIELA--------------------*/
+/*imagenes flotando*/
+
+#contenedorimg{
+  float: right;
+}
+.banner-img{
+  float: right;
+  animation: movimiento 2.5s linear infinite;
+}
+
+.banner-img{
+  width: 500px;
+  height: 500px;
+  display: block;
+}
+
+@keyframes movimiento{
+  0%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(30px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+#img1{
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+}
+
+#img1 > .img1{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#img1 > .img11{
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img2{
+  margin-left: 30px;
+  margin-top: 90px;
+}

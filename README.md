@@ -20,6 +20,9 @@ npm i ngx-socket-io
 ```
 npm i sweetalert2
 ```
+```
+npm i ngx-cookie-service --save
+```
 # Run Server #
 ```
 npm start

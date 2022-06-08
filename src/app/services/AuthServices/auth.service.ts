@@ -6,12 +6,12 @@ import { JwtHelperService } from '@auth0/angular-jwt';
   providedIn: 'root'
 })
 export class AuthService {
-  private url = 'http://localhost:3000'
+  private url = 'https://ap-auth-server.azurewebsites.net'
 
   constructor(private http:HttpClient, private jwtHelper:JwtHelperService) { }
 
   signin(user:any){
-    return this.http.post(`${this.url}/User/SignIn`,user);
+    return this.http.post(`${this.url}/api/auth/authenticate/user`,user);
   }
 
   isAuth():boolean{
