@@ -62,10 +62,9 @@ background-size: 13px 13px;
 
 .icon {
   align-items: center;
-  background-color: var(--white);
   border-radius: 50%;
   bottom: 1rem;
-  color: var(--golden-tainoi);
+  color: #fff;
   display: flex;
   font-size: 1.5rem;
   height: 2.5rem;
@@ -76,25 +75,25 @@ background-size: 13px 13px;
 }
 
 .content:nth-of-type(2) {
-  background-image: url('https://www.business2community.com/wp-content/uploads/2020/05/Web-Presence-COVID-19.jpg');
+  background-image: url('../../../../assets/img/Login/SIGN-IN.png');
   background-size: cover;
 }
 
 .content:nth-of-type(3) {
-  background-image: url('https://thumbs.dreamstime.com/b/online-registration-sign-up-concept-young-woman-signing-login-to-account-smartphone-app-user-interface-secure-password-194944775.jpg');
+  background-image: url('../../../../assets/img/Login/SIGN-UP.png');
 }
 
 .content:nth-of-type(4) {
-  background-image: url('https://i.pinimg.com/originals/55/c7/8a/55c78aa24fb722350d6832301e973ba4.png');
+  background-image: url('../../../../assets/img/Login/ENTITIES.png');
 }
 
 .content:nth-of-type(5) {
-  background-image: url('https://www.clipartkey.com/mpngs/m/139-1397326_administration-illustration.png');
+  background-image: url('../../../../assets/img/Login/ADMIN.png');
   margin-right: 0;
 }
 
 .content:nth-of-type(2) .icon {
-  color: var(--dark-gray);
+  color: #fff;
 }
 
 .content:nth-of-type(3) .icon {
@@ -109,8 +108,9 @@ background-size: 13px 13px;
 }
 
 .card-title {
+  font-family: 'Lato', sans-serif;
   bottom: 1.2rem;
-  color: rgb(0, 0, 0);
+  color: #fff;
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
@@ -129,6 +129,8 @@ background-size: 13px 13px;
 }
 a{
   text-decoration: none;
+  color: #fff;
+  font-size: 20px;
 }
 
 .subtitle {
@@ -154,9 +156,9 @@ a{
 }
 
 .p{
+  font-family: 'Lato', sans-serif;
   background: linear-gradient(to right,  #1fa2ff, #12d8fa);
   height: 100%;
-  border: 0px solid red;
   display: flex;
   align-items: center;
   -webkit-background-clip: text;
@@ -166,10 +168,7 @@ a{
   color: transparent;
 }
 
-
-
 .caja_div{
-  border: 0px solid red;
   position: absolute;
   top: 0;
   width: 100%;
