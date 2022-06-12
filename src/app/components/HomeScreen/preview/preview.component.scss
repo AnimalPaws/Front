@@ -909,7 +909,6 @@ display: none;
 /*-------------daniela----------------*/
 .container{
   width: 15%;
-  border: 0px solid red ;
   background-color: $bg-color;
   display: flex;
   justify-content: center;
@@ -924,16 +923,10 @@ display: none;
 #content-section
 {
   display: flex;
-  border: 0px solid blue ;
   height:100vh;
 }
 
-.account{
-  border: 0px solid red;
-}
-
 #content-chats{
-  border: 0px solid wheat;
   height: 969px;
   display: flex;
   flex-direction: column;
@@ -944,7 +937,6 @@ display: none;
 }
 
 .side-wrapper{
-  border: 0px solid rgb(27, 197, 56);
   height: auto;
   flex-grow: 1;
   overflow: auto;
@@ -960,7 +952,6 @@ display: none;
 }
 
 .contacts{
-  border: 0px solid darkblue;
   height: auto;
   flex-grow: 1;
   overflow: auto;
@@ -972,7 +963,6 @@ display: none;
 }
 
 #wrapp{
-  border: 0px solid rgb(141, 252, 200);
   height: 900px;
   flex-grow: 1;
   overflow: auto;
@@ -980,7 +970,6 @@ display: none;
 }
 
 .search-bar{
-  border: 0px solid darkblue;
   height: 40px;
   position: relative;
   bottom: 0;
@@ -992,12 +981,10 @@ display: none;
   flex-direction: column;
   width: 80%;
   background-color: #181d2f;
-  border: 0px solid red;
 }
 
 
 .timeline-right{
-  border: 0px solid red;
   width: 80%;
 }
 
@@ -1007,7 +994,6 @@ display: none;
   flex-grow: 1;
   align-items: center;
   overflow: auto;
-  border: 0px solid red;
   height: auto;
   background-color: #e2dbdb;
 }
@@ -1016,7 +1002,6 @@ display: none;
 
 @media screen and (max-width:1280px){
   #content-chats{
-    border: 0px solid red;
     height: 800px;
   }
 }

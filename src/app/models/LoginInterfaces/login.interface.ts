@@ -1,4 +1,4 @@
 export interface LoginI{
-    email:string;
+    username:string;
     password:string;
 }

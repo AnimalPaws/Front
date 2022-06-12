@@ -30,7 +30,7 @@ import { PostProfileComponent } from './components/Posts/post-profile/post-profi
 // Error 404 Component //
 import { ErrorComponent } from './components/error/error.component';
 // External Dependencies //
-import { AuthGuard } from './guards/auth.guard';
+/*import { AuthGuard } from './guards/auth.guard';*/
 import { importExpr } from '@angular/compiler/src/output/output_ast';
 
 const routes: Routes = [
@@ -60,7 +60,7 @@ const routes: Routes = [
   {path: 'Login/SignUser', component:SignUserComponent},
   {path: 'Login/Auth', component:AuthRoleComponent},
   // Posts Routes //
-  {path: 'Home', component:PostHomeComponent, canActivate: [AuthGuard]},
+  {path: 'Home', component:PostHomeComponent, /*canActivate: [AuthGuard]*/},
   {path: 'Profile', component:PostProfileComponent},
   // Error 404 Route //
   {path: '**', component: ErrorComponent}

@@ -1,72 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <title>Document</title>
-</head>
-
 <body>
   <div class="caja_div">
     <p class="animate__animated  animate__flipInX p">Choose An Option</p>
   </div>
-    <div class="general-container">
-        <input class="radio" type="radio" name="card" id="card-1" checked />
-        <label class="content qi" for="card-1">
-          <span class="icon">
-          <i class="fas fa-sun"></i>
-          </span>
-          <a href="/Login/SignIn"><h3 class="card-title">
-            Serra da Freita, Vale de Cambra, Portugal
-            <span class="subtitle">@hed</span>
-          </h3></a>
-        </label>
-        <input class="radio" type="radio" name="card" id="card-2" />
-        <label class="content" for="card-2">
-          <span class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M223.8 176C223.8 202.5 202.3 224 175.8 224C149.3 224 127.8 202.5 127.8 176C127.8 149.5 149.3 128 175.8 128C202.3 128 223.8 149.5 223.8 176zM96 309.3C96 279.9 119.9 256 149.3 256H218.7C227.8 256 236.5 258.3 244 262.4C211.6 274.3 186.8 301.9 178.8 336H122.7C107.9 336 96 324.1 96 309.3H96zM395.1 262.4C403.5 258.3 412.2 256 421.3 256H490.7C520.1 256 544 279.9 544 309.3C544 324.1 532.1 336 517.3 336H461.2C453.2 301.9 428.4 274.3 395.1 262.4H395.1zM372 288.1C398 293.4 419.3 311.7 427.9 336C430.6 343.5 432 351.6 432 360C432 373.3 421.3 384 408 384H232C218.7 384 208 373.3 208 360C208 351.6 209.4 343.5 212.1 336C220.7 311.7 241.1 293.4 267.1 288.1C271.9 288.3 275.9 288 280 288H360C364.1 288 368.1 288.3 372 288.1V288.1zM512 176C512 202.5 490.5 224 464 224C437.5 224 416 202.5 416 176C416 149.5 437.5 128 464 128C490.5 128 512 149.5 512 176zM256 192C256 156.7 284.7 128 320 128C355.3 128 384 156.7 384 192C384 227.3 355.3 256 320 256C284.7 256 256 227.3 256 192zM544 0C597 0 640 42.98 640 96V416C640 469 597 512 544 512H96C42.98 512 0 469 0 416V96C0 42.98 42.98 0 96 0H544zM64 416C64 433.7 78.33 448 96 448H544C561.7 448 576 433.7 576 416V96C576 78.33 561.7 64 544 64H96C78.33 64 64 78.33 64 96V416z"/></svg>
-          </span>
-          <h3 class="card-title">
-            Sign In
-            <span class="subtitle">Login Animal Paws</span>
-            <a routerLink="/Login/SignIn">Enter</a>
-          </h3>
-        </label>
-        <input class="radio" type="radio" name="card" id="card-3" />
-        <label class="content" for="card-3">
-          <span class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"/></svg>
-          </span>
-          <h3 class="card-title">
-            Sign Up
-            <span class="subtitle">Start Your New Adventure At Animal Paws</span>
-            <a routerLink="/Login/SignUp">Enter</a>
-          </h3>
-        </label>
-        <input class="radio" type="radio" name="card" id="card-4" />
-        <label class="content" for="card-4">
-          <span class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 224c-79.37 0-191.1 122.7-191.1 200.2C64.02 459.1 90.76 480 135.8 480C184.6 480 216.9 454.9 256 454.9C295.5 454.9 327.9 480 376.2 480c44.1 0 71.74-20.88 71.74-55.75C447.1 346.8 335.4 224 256 224zM108.8 211.4c-10.37-34.62-42.5-57.12-71.62-50.12S-7.104 202 3.27 236.6C13.64 271.3 45.77 293.8 74.89 286.8S119.1 246 108.8 211.4zM193.5 190.6c30.87-8.125 46.37-49.1 34.5-93.37s-46.5-71.1-77.49-63.87c-30.87 8.125-46.37 49.1-34.5 93.37C127.9 170.1 162.5 198.8 193.5 190.6zM474.9 161.3c-29.12-6.1-61.25 15.5-71.62 50.12c-10.37 34.63 4.75 68.37 33.87 75.37c29.12 6.1 61.12-15.5 71.62-50.12C519.1 202 503.1 168.3 474.9 161.3zM318.5 190.6c30.1 8.125 65.62-20.5 77.49-63.87c11.87-43.37-3.625-85.25-34.5-93.37c-30.1-8.125-65.62 20.5-77.49 63.87C272.1 140.6 287.6 182.5 318.5 190.6z"/></svg>
-          </span>
-          <h3 class="card-title">
-            Sign Up As An Entity
-            <span class="subtitle">Register Your Entity Here</span>
-            <a routerLink="/Login/Auth">Enter</a>
-          </h3>
-        </label>
-        <input class="radio" type="radio" name="card" id="card-5" />
-        <label class="content" for="card-5">
-          <span class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M622.3 271.1l-115.1-45.01c-4.125-1.629-12.62-3.754-22.25 0L369.8 271.1C359 275.2 352 285.1 352 295.1c0 111.6 68.75 188.8 132.9 213.9c9.625 3.75 18 1.625 22.25 0C558.4 489.9 640 420.5 640 295.1C640 285.1 633 275.2 622.3 271.1zM496 462.4V273.2l95.5 37.38C585.9 397.8 530.6 446 496 462.4zM224 256c70.7 0 128-57.31 128-128S294.7 0 224 0C153.3 0 96 57.31 96 128S153.3 256 224 256zM320.6 310.3C305.9 306.3 290.6 304 274.7 304H173.3C77.61 304 0 381.7 0 477.4C0 496.5 15.52 512 34.66 512H413.3c3.143 0 5.967-1.004 8.861-1.789C369.7 469.8 324.1 400.3 320.6 310.3z"/></svg>
-          </span>
-          <h3 class="card-title">
-            Sign Up As Administrator Or Moderator
-            <span class="subtitle">Control Animal Paws</span>
-            <a routerLink="/Login/Auth">Enter</a>
-          </h3>
-        </label>
-      </div>
+  <div class="general-container">
+    <input class="radio" type="radio" name="card" id="card-1" checked />
+    <label class="content qi" for="card-1">
+      <span class="icon">
+        <i class="fas fa-sun"></i>
+      </span>
+      <a href="/Login/SignIn">
+        <h3 class="card-title">
+          Serra da Freita, Vale de Cambra, Portugal
+          <span class="subtitle">@hed</span>
+        </h3>
+      </a>
+    </label>
+    <input class="radio" type="radio" name="card" id="card-2" />
+    <label class="content" for="card-2">
+      <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+          <path
+            d="M223.8 176C223.8 202.5 202.3 224 175.8 224C149.3 224 127.8 202.5 127.8 176C127.8 149.5 149.3 128 175.8 128C202.3 128 223.8 149.5 223.8 176zM96 309.3C96 279.9 119.9 256 149.3 256H218.7C227.8 256 236.5 258.3 244 262.4C211.6 274.3 186.8 301.9 178.8 336H122.7C107.9 336 96 324.1 96 309.3H96zM395.1 262.4C403.5 258.3 412.2 256 421.3 256H490.7C520.1 256 544 279.9 544 309.3C544 324.1 532.1 336 517.3 336H461.2C453.2 301.9 428.4 274.3 395.1 262.4H395.1zM372 288.1C398 293.4 419.3 311.7 427.9 336C430.6 343.5 432 351.6 432 360C432 373.3 421.3 384 408 384H232C218.7 384 208 373.3 208 360C208 351.6 209.4 343.5 212.1 336C220.7 311.7 241.1 293.4 267.1 288.1C271.9 288.3 275.9 288 280 288H360C364.1 288 368.1 288.3 372 288.1V288.1zM512 176C512 202.5 490.5 224 464 224C437.5 224 416 202.5 416 176C416 149.5 437.5 128 464 128C490.5 128 512 149.5 512 176zM256 192C256 156.7 284.7 128 320 128C355.3 128 384 156.7 384 192C384 227.3 355.3 256 320 256C284.7 256 256 227.3 256 192zM544 0C597 0 640 42.98 640 96V416C640 469 597 512 544 512H96C42.98 512 0 469 0 416V96C0 42.98 42.98 0 96 0H544zM64 416C64 433.7 78.33 448 96 448H544C561.7 448 576 433.7 576 416V96C576 78.33 561.7 64 544 64H96C78.33 64 64 78.33 64 96V416z" />
+        </svg>
+      </span>
+      <h3 class="card-title">
+        Sign In
+        <span class="subtitle">Login Animal Paws</span>
+        <a routerLink="/Login/SignIn">Enter</a>
+      </h3>
+    </label>
+    <input class="radio" type="radio" name="card" id="card-3" />
+    <label class="content" for="card-3">
+      <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z" />
+        </svg>
+      </span>
+      <h3 class="card-title">
+        Sign Up
+        <span class="subtitle">Start Your New Adventure At Animal Paws</span>
+        <a routerLink="/Login/SignUp">Enter</a>
+      </h3>
+    </label>
+    <input class="radio" type="radio" name="card" id="card-4" />
+    <label class="content" for="card-4">
+      <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M256 224c-79.37 0-191.1 122.7-191.1 200.2C64.02 459.1 90.76 480 135.8 480C184.6 480 216.9 454.9 256 454.9C295.5 454.9 327.9 480 376.2 480c44.1 0 71.74-20.88 71.74-55.75C447.1 346.8 335.4 224 256 224zM108.8 211.4c-10.37-34.62-42.5-57.12-71.62-50.12S-7.104 202 3.27 236.6C13.64 271.3 45.77 293.8 74.89 286.8S119.1 246 108.8 211.4zM193.5 190.6c30.87-8.125 46.37-49.1 34.5-93.37s-46.5-71.1-77.49-63.87c-30.87 8.125-46.37 49.1-34.5 93.37C127.9 170.1 162.5 198.8 193.5 190.6zM474.9 161.3c-29.12-6.1-61.25 15.5-71.62 50.12c-10.37 34.63 4.75 68.37 33.87 75.37c29.12 6.1 61.12-15.5 71.62-50.12C519.1 202 503.1 168.3 474.9 161.3zM318.5 190.6c30.1 8.125 65.62-20.5 77.49-63.87c11.87-43.37-3.625-85.25-34.5-93.37c-30.1-8.125-65.62 20.5-77.49 63.87C272.1 140.6 287.6 182.5 318.5 190.6z" />
+        </svg>
+      </span>
+      <h3 class="card-title">
+        Sign Up As An Entity
+        <span class="subtitle">Register Your Entity Here</span>
+        <a routerLink="/Login/Auth">Enter</a>
+      </h3>
+    </label>
+    <input class="radio" type="radio" name="card" id="card-5" />
+    <label class="content" for="card-5">
+      <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+          <path
+            d="M622.3 271.1l-115.1-45.01c-4.125-1.629-12.62-3.754-22.25 0L369.8 271.1C359 275.2 352 285.1 352 295.1c0 111.6 68.75 188.8 132.9 213.9c9.625 3.75 18 1.625 22.25 0C558.4 489.9 640 420.5 640 295.1C640 285.1 633 275.2 622.3 271.1zM496 462.4V273.2l95.5 37.38C585.9 397.8 530.6 446 496 462.4zM224 256c70.7 0 128-57.31 128-128S294.7 0 224 0C153.3 0 96 57.31 96 128S153.3 256 224 256zM320.6 310.3C305.9 306.3 290.6 304 274.7 304H173.3C77.61 304 0 381.7 0 477.4C0 496.5 15.52 512 34.66 512H413.3c3.143 0 5.967-1.004 8.861-1.789C369.7 469.8 324.1 400.3 320.6 310.3z" />
+        </svg>
+      </span>
+      <h3 class="card-title">
+        Sign Up As Administrator Or Moderator
+        <span class="subtitle">Control Animal Paws</span>
+        <a routerLink="/Login/Auth">Enter</a>
+      </h3>
+    </label>
+  </div>
 </body>
-</html>
