@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { UserUp } from '../../../models/LoginInterfaces/user-up';
+import { PostService } from 'src/app/services/HttpServices/post.service';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -11,8 +12,14 @@ import { Subscription } from 'rxjs';
 export class PostHomeComponent implements OnInit, OnDestroy {
   user: UserUp[] | any;
   subRef$!: Subscription;
+  post: Array<any> = []
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient, private posts:PostService) { 
+    this.posts.getPost().subscribe((res:any)=>{
+      console.log(res)
+      this.post=res
+    })
+  }
 
   ngOnInit(): void {
     let httpHeaders: HttpHeaders = new HttpHeaders();

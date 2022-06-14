@@ -1526,3 +1526,59 @@ a:hover,
   margin-left: 30px;
   margin-top: 90px;
 }
+
+.ho{
+  border: 0px solid red;
+  height: 200px;
+  line-height: 60px;
+  font-size: 60px;
+}
+
+.mid{
+  display: flex;
+  border: 0px solid red;
+  justify-content: center;
+}
+
+.down{
+  display: flex;
+  align-items: flex-end;
+  border: 0px solid red;
+}
+
+.midd {
+  text-align: center;
+  --animate-duration: 0.9s;
+}
+
+.midd2{
+  --animation-duration: 0.1s;
+}
+
+.down{
+  --animation-direction: 0.2s;
+}
+/*-------------------DANIELA TAPIERO---------------------------------------------*/
+@media screen and (max-width:1280px){
+  .banner-img{
+    border: 0px solid wheat;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:1105px){
+  .img2{
+    display: none;
+  }
+}
+
+@media screen and (max-width:950px){
+  .mid{
+    display: flex;
+    justify-content: center;
+  }
+
+  .down{
+    left: 0;
+  }
+}
