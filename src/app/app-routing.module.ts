@@ -26,7 +26,17 @@ import { SignUserComponent } from './components/Login/sign-up/sign-user/sign-use
 import { AuthRoleComponent } from './components/Login/auth-role/auth-role.component';
 // Posts Components //
 import { PostHomeComponent } from './components/Posts/post-home/post-home.component';
-import { PostProfileComponent } from './components/Posts/post-profile/post-profile.component';
+import { PostTrendComponent } from './components/Posts/post-trend/post-trend.component';
+import { PostAdoptComponent } from './components/Posts/post-adopt/post-adopt.component';
+import { PostEntitiesComponent } from './components/Posts/post-entities/post-entities.component';
+import { PostAccountsComponent } from './components/Posts/post-accounts/post-accounts.component';
+import { PostEditComponent } from './components/Posts/post-edit/post-edit.component';
+// Create Components //
+import { CreatePostComponent } from './components/Create/create-post/create-post.component';
+import { CreateYourPostsComponent } from './components/Create/create-your-posts/create-your-posts.component';
+import { CreateYourAdoptComponent } from './components/Create/create-your-adopt/create-your-adopt.component';
+import { CreateSettingsComponent } from './components/Create/create-settings/create-settings.component';
+import { CreateAccountComponent } from './components/Create/create-account/create-account.component';
 // Error 404 Component //
 import { ErrorComponent } from './components/error/error.component';
 // External Dependencies //
@@ -61,7 +71,17 @@ const routes: Routes = [
   {path: 'Login/Auth', component:AuthRoleComponent},
   // Posts Routes //
   {path: 'Home', component:PostHomeComponent, /*canActivate: [AuthGuard]*/},
-  {path: 'Profile', component:PostProfileComponent},
+  {path: 'Trend', component:PostTrendComponent},
+  {path: 'Adopt', component:AdoptComponent},
+  {path: 'Entities', component:EntitiesComponent},
+  {path: 'Accounts', component:AccountComponent},
+  {path: 'Edit/:id', component:PostEditComponent},
+  // Create Routes //
+  {path: 'CreatePosts', component:CreatePostComponent},
+  {path: 'YourPosts', component:CreateYourPostsComponent},
+  {path: 'YourAdoptions', component:CreateYourAdoptComponent},
+  {path: 'Settings', component:CreateSettingsComponent},
+  {path: 'YourAccount', component:CreateAccountComponent},
   // Error 404 Route //
   {path: '**', component: ErrorComponent}
 ];

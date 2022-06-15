@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <body>
 <div class="form_wrapper">
 	<div class="form_container">
@@ -6,14 +7,14 @@
 		</div>
 		<div class="row clearfix">
 			<div class="">
-				<form id='register-form' autocomplete="off">
+				<form id='register-form' autocomplete="off" #userAccount="ngForm" (ngSubmit)="onSubmit(userAccount.value)">
 					<div class="row clearfix">
 						<div class="col_half">
 							<div class="input_field">
 								<span>
 									<i aria-hidden="true" class="fa fa-user"></i>
 								</span>
-								<input type="text" name="name" placeholder="First Name" />
+								<input type="text" name="first_Name" class="input" placeholder="First Name" ngModel/>
 							</div>
 						</div>
 						<div class="col_half">
@@ -21,7 +22,7 @@
 								<span>
 									<i aria-hidden="true" class="fa fa-user"></i>
 								</span>
-								<input type="text" name="name" placeholder="Middle Name" required />
+								<input type="text" name="middle_Name" class="input" placeholder="Middle Name" required ngModel/>
 							</div>
 						</div>
 						<div class="col_half">
@@ -29,7 +30,7 @@
 								<span>
 									<i aria-hidden="true" class="fa fa-user"></i>
 								</span>
-								<input type="text" name="name" placeholder="Surname" required />
+								<input type="text" name="surname" class="input" placeholder="Surname" required ngModel/>
 							</div>
 						</div>
 						<div class="col_half">
@@ -37,7 +38,7 @@
 								<span>
 									<i aria-hidden="true" class="fa fa-user"></i>
 								</span>
-								<input type="text" name="name" placeholder="Last Name" required />
+								<input type="text" name="last_Name" class="input" placeholder="Last Name" required ngModel/>
 							</div>
 						</div>
 					</div>
@@ -45,56 +46,51 @@
 						<span>
 							<i aria-hidden="true" class="fa fa-envelope"></i>
 						</span>
-						<input type="email" name="email" placeholder="Email" required />
+						<input type="email" name="email" class="input" placeholder="Email" required ngModel/>
 					</div>
 					<div class="input_field">
 						<span><i aria-hidden="true" class="fa fa-lock">
 							</i>
 						</span>
-						<input type="password" name="password" placeholder="Password" required />
+						<input type="password" name="password" class="input" placeholder="Password" required ngModel/>
 					</div>
 					<div class="input_field">
 						<span>
 							<i aria-hidden="true" class="fa fa-lock"></i>
 						</span>
-						<input type="text" name="username" placeholder="Username" required />
+						<input type="text" name="username" class="input" placeholder="Username" required ngModel/>
 					</div>
 					<div class="input_field">
 						<span>
 							<i aria-hidden="true" class="fa fa-lock"></i>
 						</span>
-						<input type="text" name="phone" placeholder="Phone" required />
+						<input type="text" name="phone_Number" class="input" placeholder="Phone" required ngModel/>
 					</div>
 					<div class="input_field">
 						<span>
 							<i aria-hidden="true" class="fa fa-lock"></i>
 						</span>
-						<input type="date" name="username" placeholder="Username" required />
+						<input type="text" name="sex" class="input" placeholder="Sex" required ngModel/>
 					</div>
 					<div class="input_field">
 						<span>
 							<i aria-hidden="true" class="fa fa-lock"></i>
 						</span>
-						<input type="text" name="username" placeholder="Departament" required />
+						<input type="date" name="birthdate" class="input" placeholder="Birthdate" required ngModel/>
 					</div>
 					<div class="input_field">
 						<span>
 							<i aria-hidden="true" class="fa fa-lock"></i>
 						</span>
-						<input type="text" name="username" placeholder="City" required />
+						<input type="text" name="department" class="input" placeholder="Departament" required ngModel/>
 					</div>
-					<!--					<div class="input_field checkbox_option">
-						<input type="checkbox" id="cb1">
-						<label for="cb1">I agree with terms and conditions</label>
+					<div class="input_field">
+						<span>
+							<i aria-hidden="true" class="fa fa-lock"></i>
+						</span>
+						<input type="text" name="city" class="input" placeholder="City" required ngModel/>
 					</div>
-					<div class="input_field checkbox_option">
-						<input type="checkbox" id="cb2">
-						<label for="cb2">I want to receive the newsletter</label>
-					</div>
-					<button id='check-data' class='button'>
-						Check Data
-					</button>
---> <input id='submit-data' class="button" type="submit" value="Register" />
+	<input id='submit-data' class="button" type="submit" value="Register" (click)="showModal()" />
 				</form>
 			</div>
 		</div>

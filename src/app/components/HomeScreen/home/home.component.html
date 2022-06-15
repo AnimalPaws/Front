@@ -4,30 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+      <!-- Font -->
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
-
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
 
   <!--  Header Start    -->
-  <nav>
-    <ul class="nav-list">
-      <li class="nav-item">
-        <img src="../../../../assets/img/HomeScreen/logo_ap.png" alt=""></li>
-      <li class="nav-item">
-        <fa-icon [icon]="faArrows"></fa-icon><a routerLink="/PatchNotes">Updates</a>
-      </li>
-      <li class="nav-item">
-        <fa-icon [icon]="faGear"></fa-icon><a routerLink="/Functions"><span>Functions</span></a>
-      </li>
-      <li class="nav-item">
-        <fa-icon [icon]="faEyeslash"></fa-icon><a routerLink="/Preview"><span>Preview</span></a>
-      </li>
-      <li class="nav-item">
-        <fa-icon [icon]="faUser"></fa-icon><a routerLink="/Login"><span>Login</span></a>
-      </li>
-    </ul>
-      </nav>
+  <div class="arr">
+
+    <nav>
+      <ul class="nav-list show ul">
+        <li class="nav-item">
+          <a routerLink="/"><img src="../../../../assets/img/HomeScreen/logo_ap.png" alt=""></a></li>
+        <li class="nav-item">
+          <fa-icon [icon]="faArrows"></fa-icon><a routerLink="/PatchNotes">Updates</a>
+        </li>
+        <li class="nav-item">
+          <fa-icon [icon]="faGear"></fa-icon><a routerLink="/Functions"><span>Functions</span></a>
+        </li>
+        <li class="nav-item">
+          <fa-icon [icon]="faEyeslash"></fa-icon><a routerLink="/Preview"><span>Preview</span></a>
+        </li>
+        <li class="nav-item">
+          <fa-icon [icon]="faUser"></fa-icon><a routerLink="/Login"><span>Login</span></a>
+        </li>
+      </ul>
+        </nav>
+  </div>
   <!--  Header End    -->
 
   <!--  Main Start   -->

@@ -3,48 +3,29 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { UserUp } from '../../../models/LoginInterfaces/user-up';
 import { PostService } from 'src/app/services/HttpServices/post.service';
 import { Subscription } from 'rxjs';
+import { AdsService } from 'src/app/services/HttpServices/ads.service';
+import { Posts } from 'src/app/models/PostInterfaces/posts';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-post-home',
   templateUrl: './post-home.component.html',
   styleUrls: ['./post-home.component.scss']
 })
-export class PostHomeComponent implements OnInit, OnDestroy {
+export class PostHomeComponent implements OnInit{
   user: UserUp[] | any;
   subRef$!: Subscription;
-  post: Array<any> = []
+  post!:Posts[];
+  ad: Array<any> = [1]
 
-  constructor(private http:HttpClient, private posts:PostService) { 
-    this.posts.getPost().subscribe((res:any)=>{
-      console.log(res)
-      this.post=res
-    })
-  }
+  constructor(private http:HttpClient, private posts:PostService, private ads:AdsService, private router:Router) { }
 
   ngOnInit(): void {
-    let httpHeaders: HttpHeaders = new HttpHeaders();
-    const token = sessionStorage.getItem('token');
-    console.log('Get Token', token);
-
-    httpHeaders = httpHeaders.append('Authorization', 'Bearer' + token);
-
-    this.subRef$ = this.http.get<UserUp[]>('url', {
-      headers: httpHeaders,
-      observe: 'response'
-    }).subscribe(res => {
-      this.user = res.body;
-    },
-    err => {
-      console.log('API ERROR', err)
-    });
+    this.posts.getPost().subscribe(data =>{
+      this.post = data;
+    })
   }
-  ngOnDestroy(): void {
-    if (this.subRef$) {
-      this.subRef$.unsubscribe();
-    }
+  editPost(id:any){
+    this.router.navigate(['Edit', id])
   }
-  logOut(){
-    localStorage.removeItem('token')
-  }
-
 }

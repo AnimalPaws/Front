@@ -41,6 +41,15 @@ import { SignEntitiesComponent } from './components/Login/sign-entities/sign-ent
 import { LoginOptionsComponent } from './components/Login/login-options/login-options.component';
 import { LoginEntitiesComponent } from './components/Login/login-entities/login-entities.component';
 import { AuthRoleComponent } from './components/Login/auth-role/auth-role.component';
+import { PostTrendComponent } from './components/Posts/post-trend/post-trend.component';
+import { PostAccountsComponent } from './components/Posts/post-accounts/post-accounts.component';
+import { PostEntitiesComponent } from './components/Posts/post-entities/post-entities.component';
+import { CreatePostComponent } from './components/Create/create-post/create-post.component';
+import { CreateYourPostsComponent } from './components/Create/create-your-posts/create-your-posts.component';
+import { CreateYourAdoptComponent } from './components/Create/create-your-adopt/create-your-adopt.component';
+import { CreateSettingsComponent } from './components/Create/create-settings/create-settings.component';
+import { CreateAccountComponent } from './components/Create/create-account/create-account.component';
+import { PostEditComponent } from './components/Posts/post-edit/post-edit.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +78,16 @@ import { AuthRoleComponent } from './components/Login/auth-role/auth-role.compon
     SignEntitiesComponent,
     LoginOptionsComponent,
     LoginEntitiesComponent,
-    AuthRoleComponent
+    AuthRoleComponent,
+    PostTrendComponent,
+    PostAccountsComponent,
+    PostEntitiesComponent,
+    CreatePostComponent,
+    CreateYourPostsComponent,
+    CreateYourAdoptComponent,
+    CreateSettingsComponent,
+    CreateAccountComponent,
+    PostEditComponent
   ],
   imports: [
     // Angular Imports //
