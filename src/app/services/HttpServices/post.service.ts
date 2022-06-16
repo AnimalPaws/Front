@@ -15,4 +15,8 @@ export class PostService {
     let ad = this.url + "/";
     return this.http.get<Posts[]>(ad);
   };
+  getAPost(id:any):Observable<Posts>{
+    let ad = this.url + "/" + id;
+    return this.http.get<Posts>(ad);
+  }
 }

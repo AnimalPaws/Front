@@ -14,7 +14,6 @@ import { Router } from '@angular/router';
 })
 export class PostHomeComponent implements OnInit{
   user: UserUp[] | any;
-  subRef$!: Subscription;
   post!:Posts[];
   ad: Array<any> = [1]
 
