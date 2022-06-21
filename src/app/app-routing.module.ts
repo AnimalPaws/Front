@@ -6,6 +6,9 @@ import { HomeComponent } from '../app/components/HomeScreen/home/home.component'
 import { AboutComponent } from '../app/components//HomeScreen/about/about.component';
 import { ContribuitorComponent } from './components/HomeScreen/contribuitor/contribuitor.component';
 import { PreviewComponent } from './components/HomeScreen/preview/preview.component';
+import { ContactUsComponent } from './components/HomeScreen/contact-us/contact-us.component';
+import { PrivacyComponent } from './components/Legal/privacy/privacy.component';
+import { TermsComponent } from './components/Legal/terms/terms.component';
 // Functions Components //
 import { FunctionsComponent } from '../app/components/HomeScreen/functions/functions.component';
 import { AccountComponent } from './components/HomeScreen/functions/account/account.component';
@@ -14,6 +17,9 @@ import { PostComponent } from './components/HomeScreen/functions/post/post.compo
 import { AdoptComponent } from './components/HomeScreen/functions/adopt/adopt.component';
 import { EntitiesComponent } from './components/HomeScreen/functions/entities/entities.component';
 import { HelpComponent } from './components/HomeScreen/functions/help/help.component';
+// Boosted Components //
+import { BoostedInfoComponent } from './components/Boosted/boosted-info/boosted-info.component';
+import { BoostedFormComponent } from './components/Boosted/boosted-form/boosted-form.component';
 // Updates Components //
 import { PatchNotesComponent } from '../app/components/Updates/patch-notes/patch-notes.component';
 import { FirstPatchComponent } from '../app/components/Updates/first-patch/first-patch.component';
@@ -51,6 +57,10 @@ const routes: Routes = [
   {path: 'AboutUs', component: AboutComponent},
   {path: 'Contribuitors', component:ContribuitorComponent},
   {path: 'Preview', component:PreviewComponent},
+  {path: 'ContactUs', component:ContactUsComponent},
+  {path: 'Privacy', component:PrivacyComponent},
+  {path: 'TermsOfServices', component:TermsComponent},
+  {path: 'BecomeAContribuitor', component:ContribuitorComponent},
   // Functions Routes //
   {path: 'Functions', component:FunctionsComponent},
   {path: 'AccountInfo', component:AccountComponent},
@@ -59,6 +69,9 @@ const routes: Routes = [
   {path: 'AdoptInfo', component:AdoptComponent},
   {path: 'EntitiesInfo', component:EntitiesComponent},
   {path: 'HelpInfo', component:HelpComponent},
+  // Boosted Routes //
+  {path: 'BoostedInfo', component:BoostedInfoComponent},
+  {path: 'BoostedPay', component:BoostedFormComponent},
   // Updates Routes //
   {path: 'PatchNotes', component:PatchNotesComponent},
   {path: 'FirstPatch', component:FirstPatchComponent},
@@ -72,9 +85,9 @@ const routes: Routes = [
   // Posts Routes //
   {path: 'Home', component:PostHomeComponent, /*canActivate: [AuthGuard]*/},
   {path: 'Trend', component:PostTrendComponent},
-  {path: 'Adopt', component:AdoptComponent},
-  {path: 'Entities', component:EntitiesComponent},
-  {path: 'Accounts', component:AccountComponent},
+  {path: 'Adopt', component:PostAdoptComponent},
+  {path: 'Entities', component:PostEntitiesComponent},
+  {path: 'Accounts', component:PostAccountsComponent},
   {path: 'Edit/:id', component:PostEditComponent},
   // Create Routes //
   {path: 'CreatePosts', component:CreatePostComponent},

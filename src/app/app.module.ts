@@ -50,6 +50,11 @@ import { CreateYourAdoptComponent } from './components/Create/create-your-adopt/
 import { CreateSettingsComponent } from './components/Create/create-settings/create-settings.component';
 import { CreateAccountComponent } from './components/Create/create-account/create-account.component';
 import { PostEditComponent } from './components/Posts/post-edit/post-edit.component';
+import { BoostedInfoComponent } from './components/Boosted/boosted-info/boosted-info.component';
+import { BoostedFormComponent } from './components/Boosted/boosted-form/boosted-form.component';
+import { ContactUsComponent } from './components/HomeScreen/contact-us/contact-us.component';
+import { PrivacyComponent } from './components/Legal/privacy/privacy.component';
+import { TermsComponent } from './components/Legal/terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +92,12 @@ import { PostEditComponent } from './components/Posts/post-edit/post-edit.compon
     CreateYourAdoptComponent,
     CreateSettingsComponent,
     CreateAccountComponent,
-    PostEditComponent
+    PostEditComponent,
+    BoostedInfoComponent,
+    BoostedFormComponent,
+    ContactUsComponent,
+    PrivacyComponent,
+    TermsComponent
   ],
   imports: [
     // Angular Imports //

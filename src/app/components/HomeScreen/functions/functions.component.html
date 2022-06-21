@@ -1,88 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <title>Document</title>
+</head>
 <body>
-	<div class="header">
-		<a class="menu-icon" href="#">
-			<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-			</svg>
-		</a>
-		<img class="logo" src="../../../../assets/img/HomeScreen/logo_ap.png" alt="AnimalPaws Logo" />
-		<div class="header-menu">
-			<a routerLink="/PatchNotes">Updates</a>
-			<a routerLink="/Functions">Functions</a>
-			<a routerLink="/Preview">Preview</a>
-			<a routerLink="/Login">Login</a>
-		</div>
-		<div class="header-icons">
-			<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-					d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-			</svg>
-		</div>
-	</div>
-	<div class="boxes">
-		<div class="box">
-			<div class="paragraph">
-				<p>Anuncios</p>
-			</div>
-			<a class="a" routerLink="/PostInfo">
-				<div class="image">
-					<img src="../../../../assets/img/HomeScreen/posts_sis.png" alt="">
-				</div>
-			</a>
-		</div>
-		<div class="box">
-			<div class="paragraph">
-				<p>Roles en la cuenta</p>
-			</div>
-			<a class="a" routerLink="/AccountInfo">
-				<div class="image">
-					<img src="../../../../assets/img/HomeScreen/roles_sis.png" alt="">
-				</div>
-			</a>
-		</div>
-		<div class="box">
-			<div class="paragraph">
-				<p>Sistema de chat</p>
-			</div>
-			<a class="a" routerLink="/ChatInfo">
-				<div class="image">
-					<img src="../../../../assets/img/HomeScreen/chat_sis.png" alt="">
-				</div>
-			</a>
-		</div>
-	</div>
-	<div class="boxess">
-		<div class="box">
-			<div class="paragraph">
-				<p>Adopciones</p>
-			</div>
-			<a class="a" routerLink="/AdoptInfo">
-				<div class="image">
-					<img src="../../../../assets/img/HomeScreen/adopt_sys.png" alt="">
-				</div>
-			</a>
-		</div>
-		<div class="box">
-			<div class="paragraph">
-				<p>Entidades</p>
-			</div>
-			<a class="a" routerLink="/EntitiesInfo">
-				<div class="image">
-					<img src="../../../../assets/img/HomeScreen/entities_sys.png" alt="">
-				</div>
-			</a>
-		</div>
-		<div class="box">
-			<div class="paragraph">
-				<p>Ayuda</p>
-			</div>
-			<a class="a" routerLink="/HelpInfo">
-				<div class="image">
-					<img src="../../../../assets/img/HomeScreen/help_sys.png" alt="">
-				</div>
-			</a>
-		</div>
-	</div>
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+
+  <!--  Header Start    -->
+  <div class="arr">
+
+    <nav>
+      <ul class="nav-list show ul">
+        <li class="nav-item">
+         <a href="/"><img src="../../../../assets/img/HomeScreen/logo_ap.png" alt=""></a></li>
+        <li class="nav-item">
+          <fa-icon [icon]="faArrows"></fa-icon><a routerLink="/PatchNotes">Updates</a>
+        </li>
+        <li class="nav-item">
+          <fa-icon [icon]="faGear"></fa-icon><a routerLink="/Functions"><span>Functions</span></a>
+        </li>
+        <li class="nav-item">
+          <fa-icon [icon]="faEyeslash"></fa-icon><a routerLink="/Preview"><span>Preview</span></a>
+        </li>
+        <li class="nav-item">
+          <fa-icon [icon]="faUser"></fa-icon><a routerLink="/Login"><span>Login</span></a>
+        </li>
+      </ul>
+        </nav>
+  </div>
+  <!--  Header End    -->
+
+  <div class="center2">
+
+    <div class="boxes">
+      <div class="box">
+        <div class="paragraph">
+          <p>Anuncios</p>
+        </div>
+        <a class="a" routerLink="/PostInfo">
+          <div class="image">
+            <img src="../../../../assets/img/HomeScreen/posts_sis.png" alt="">
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="paragraph">
+          <p>Roles en la cuenta</p>
+        </div>
+        <a class="a" routerLink="/AccountInfo">
+          <div class="image">
+            <img src="../../../../assets/img/HomeScreen/roles_sis.png" alt="">
+          </div>
+        </a>
+      </div>
+        <div class="box center3">
+          <div class="paragraph">
+            <p>Sistema de chat</p>
+          </div>
+          <a class="a" routerLink="/ChatInfo">
+            <div class="image">
+              <img src="../../../../assets/img/HomeScreen/chat_sis.png" alt="">
+            </div>
+          </a>
+        </div>
+    </div>
+    <div class="boxess">
+      <div class="box">
+        <div class="paragraph">
+          <p>Adopciones</p>
+        </div>
+        <a class="a" routerLink="/AdoptInfo">
+          <div class="image">
+            <img src="../../../../assets/img/HomeScreen/adopt_sys.png" alt="">
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <div class="paragraph">
+          <p>Entidades</p>
+        </div>
+        <a class="a" routerLink="/EntitiesInfo">
+          <div class="image">
+            <img src="../../../../assets/img/HomeScreen/entities_sys.png" alt="">
+          </div>
+        </a>
+      </div>
+      <div class="box center33">
+        <div class="paragraph">
+          <p>Ayuda</p>
+        </div>
+        <a class="a" routerLink="/HelpInfo">
+          <div class="image">
+            <img src="../../../../assets/img/HomeScreen/help_sys.png" alt="">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 	<footer class="main-footer">
 		<div class="container">
 			<ul class="social media">
@@ -167,3 +190,4 @@
 		</div>
 	</footer>
 </body>
+</html>

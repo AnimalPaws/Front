@@ -4,34 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <title>Document</title>
 </head>
 <body>
-  <div class="header">
-		<a class="menu-icon" href="#">
-			<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-			</svg>
-		</a>
-		<img class="logo" src="../../../../assets/img/HomeScreen/logo_ap.png" alt="AnimalPaws Logo"/>
-		<div class="header-menu">
-			<a routerLink="/PatchNotes">Updates</a>
-			<a routerLink="/Functions">Functions</a>
-			<a routerLink="/Preview">Preview</a>
-			<a routerLink="/Login">Login</a>
-		</div>
-		<div class="header-icons">
-			<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-			</svg>
-		<a><button><mat-slide-toggle (click)="toggleDarkMode()" [(ngModel)]="isDarkMode"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg></mat-slide-toggle></button></a>
-		<a><button (click)="changeLanguage('en')"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM57.71 192.1L67.07 209.4C75.36 223.9 88.99 234.6 105.1 239.2L162.1 255.7C180.2 260.6 192 276.3 192 294.2V334.1C192 345.1 198.2 355.1 208 359.1C217.8 364.9 224 374.9 224 385.9V424.9C224 440.5 238.9 451.7 253.9 447.4C270.1 442.8 282.5 429.1 286.6 413.7L289.4 402.5C293.6 385.6 304.6 371.1 319.7 362.4L327.8 357.8C342.8 349.3 352 333.4 352 316.1V307.9C352 295.1 346.9 282.9 337.9 273.9L334.1 270.1C325.1 261.1 312.8 255.1 300.1 255.1H256.1C245.9 255.1 234.9 253.1 225.2 247.6L190.7 227.8C186.4 225.4 183.1 221.4 181.6 216.7C178.4 207.1 182.7 196.7 191.7 192.1L197.7 189.2C204.3 185.9 211.9 185.3 218.1 187.7L242.2 195.4C250.3 198.1 259.3 195 264.1 187.9C268.8 180.8 268.3 171.5 262.9 165L249.3 148.8C239.3 136.8 239.4 119.3 249.6 107.5L265.3 89.12C274.1 78.85 275.5 64.16 268.8 52.42L266.4 48.26C262.1 48.09 259.5 48 256 48C163.1 48 84.4 108.9 57.71 192.1L57.71 192.1zM437.6 154.5L412 164.8C396.3 171.1 388.2 188.5 393.5 204.6L410.4 255.3C413.9 265.7 422.4 273.6 433 276.3L462.2 283.5C463.4 274.5 464 265.3 464 256C464 219.2 454.4 184.6 437.6 154.5H437.6z"/></svg></button></a>
-		</div>
-	</div>
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
 
+  <!--  Header Start    -->
+  <div class="arr">
+    <nav>
+      <ul class="nav-list show ul">
+        <li class="nav-item">
+         <a routerLink="/"><img src="../../../../assets/img/HomeScreen/logo_ap.png" alt=""></a></li>
+        <li class="nav-item">
+          <fa-icon [icon]="faArrows"></fa-icon><a routerLink="/PatchNotes">Updates</a>
+        </li>
+        <li class="nav-item">
+          <fa-icon [icon]="faGear"></fa-icon><a routerLink="/Functions"><span>Functions</span></a>
+        </li>
+        <li class="nav-item">
+          <fa-icon [icon]="faEyeslash"></fa-icon><a routerLink="/Preview"><span>Preview</span></a>
+        </li>
+        <li class="nav-item">
+          <fa-icon [icon]="faUser"></fa-icon><a routerLink="/Login"><span>Login</span></a>
+        </li>
+      </ul>
+        </nav>
+  </div>
+  <!--  Header End    -->
 
   <div class="contenido">
-    <div class="cards">
+    <div class="cards center">
       <div class="card">
         <div class="img1">
           <img src="../../../../assets/img/Updates/AnimalPawsLogo.png" alt="" class="imagen1">

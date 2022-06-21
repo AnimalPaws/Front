@@ -22,11 +22,19 @@ export class PostEditComponent implements OnInit {
 
   ngOnInit(): void {
     let postid = this.activatedRouter.snapshot.paramMap.get('id')
-    console.log(postid);
+    console.log(postid)
     this.posts.getAPost(postid).subscribe(res =>{
-      this.dataPost = res[0];
-      console.log(this.dataPost)
-    })
+      this.dataPost = res
+      this.editPost.setValue({
+        'title' : this.dataPost.title,
+        'description': this.dataPost.description
+      })
+    });
+  }
+  updatePost(form:Posts){
+   /* this.posts.updatePosts(form).subscribe(res =>{
+      console.log(res)
+    })*/
   }
 
 }
