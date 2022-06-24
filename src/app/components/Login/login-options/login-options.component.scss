@@ -3,7 +3,6 @@
 
 :root {
   --dark-blue: #1F4782;
-  --dark-gray: #303335;
   --golden: #AB834C;
   --golden-tainoi: #E9BE71;
   --gray: #818C96;
@@ -63,14 +62,13 @@ body {
   bottom: 1rem;
   color: #fff;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 270%;
   height: 2.5rem;
   justify-content: center;
   left: 1.1rem;
   position: absolute;
   width: 2.5rem;
 }
-
 .content:nth-of-type(2) {
   background-image: url('../../../../assets/img/Login/SIGN-IN.png');
   background-size: cover;
@@ -94,14 +92,14 @@ body {
 }
 
 .content:nth-of-type(3) .icon {
-  color: var(--dark-blue);
+  color: #fff;
 }
 
 .content:nth-of-type(4) .icon {
-  color: var(--gray);
+  color: #fff;
 }
 .content:nth-of-type(5) .icon {
-  color: var(--golden);
+  color: #fff;
 }
 
 .card-title {
@@ -122,12 +120,14 @@ body {
   white-space: nowrap;
 }
 .card-title h3{
+  font-size: 27px;
   border-color: #FFF;
 }
 a{
   text-decoration: none;
-  color: #fff;
-  font-size: 20px;
+  -webkit-text-stroke: 0.6px #fff;
+  color: transparent; 
+  font-size: 30px;
 }
 
 .subtitle {

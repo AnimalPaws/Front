@@ -32,7 +32,6 @@ import { PostAdoptComponent } from './components/Posts/post-adopt/post-adopt.com
 import { PostComponent } from './components/HomeScreen/functions/post/post.component';
 import { ChatComponent } from './components/HomeScreen/functions/chat/chat.component';
 import { AccountComponent } from './components/HomeScreen/functions/account/account.component';
-import { SignUserComponent } from './components/Login/sign-up/sign-user/sign-user.component';
 import { PostProfileComponent } from './components/Posts/post-profile/post-profile.component';
 import { AdoptComponent } from './components/HomeScreen/functions/adopt/adopt.component';
 import { EntitiesComponent } from './components/HomeScreen/functions/entities/entities.component';
@@ -53,9 +52,6 @@ import { PostEditComponent } from './components/Posts/post-edit/post-edit.compon
 import { BoostedInfoComponent } from './components/Boosted/boosted-info/boosted-info.component';
 import { BoostedFormComponent } from './components/Boosted/boosted-form/boosted-form.component';
 import { ContactUsComponent } from './components/HomeScreen/contact-us/contact-us.component';
-import { PrivacyComponent } from './components/Legal/privacy/privacy.component';
-import { TermsComponent } from './components/Legal/terms/terms.component';
-
 @NgModule({
   declarations: [
     // Components //
@@ -75,7 +71,6 @@ import { TermsComponent } from './components/Legal/terms/terms.component';
     PostComponent,
     ChatComponent,
     AccountComponent,
-    SignUserComponent,
     PostProfileComponent,
     AdoptComponent,
     EntitiesComponent,
@@ -96,8 +91,6 @@ import { TermsComponent } from './components/Legal/terms/terms.component';
     BoostedInfoComponent,
     BoostedFormComponent,
     ContactUsComponent,
-    PrivacyComponent,
-    TermsComponent
   ],
   imports: [
     // Angular Imports //

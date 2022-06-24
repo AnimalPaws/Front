@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
 
   constructor(public translate:TranslateService, private translateConfigService: TranslateConfigService, private themeService: ThemeService, private _LoadScripts:LoadscriptsService ) { 
     this.translate.addLangs(['es', 'en']);
-    this.translate.setDefaultLang('en');
+    this.translate.setDefaultLang('en');  
     this.themeService.initTheme();
     this.isDarkMode = this.themeService.isDarkMode();
     _LoadScripts.Charge(["HomeScreen/scroll"])

@@ -21,6 +21,9 @@ npm i ngx-socket-io
 npm i sweetalert2
 ```
 ```
+npm i --save firebase angularfire2
+```
+```
 npm i ngx-cookie-service --save
 ```
 # Run Server #

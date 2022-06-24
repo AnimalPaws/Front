@@ -1,24 +1,22 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http'
-
-import { UserI } from '../models/users.interface';
-import { Observable, observable } from 'rxjs';
+import { Observable } from 'rxjs';
+import { UserI } from 'src/app/models/PostInterfaces/users';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
-  _url = '/api/User'
+  url = 'https://ap-api-server.azurewebsites.net/Profile'
 
-  constructor(private http: HttpClient ) { 
-    console.log("Servicio Anuncios xd")
-  }
-  getUsers(){
-    let header = new HttpHeaders()
-    .set('Type-content', 'aplication/json')
-  
-  return this.http.get(this._url, {
-    headers: header
-  });
-  }
+  constructor(private http: HttpClient ) { }
+
+  getUser():Observable<UserI[]>{
+    let ad = this.url + "/";
+    return this.http.get<UserI[]>(ad);
+  };
+  getAUser(id:any):Observable<UserI>{
+    let ad = this.url + "/" + id;
+    return this.http.get<UserI>(ad);
+  };
 }
