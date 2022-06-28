@@ -11,7 +11,7 @@ export class PostService {
 
   constructor(private http:HttpClient) { }
 
-  getPost():Observable<Posts[]>{ 
+  getPost():Observable<Posts[]>{
     let ad = this.url + "/";
     return this.http.get<Posts[]>(ad);
   };
@@ -19,7 +19,8 @@ export class PostService {
     let ad = this.url + "/" + id;
     return this.http.get<Posts>(ad);
   }
-  updatePosts(/*id: string, post: Posts*/)/*:Observable<any>*/{
-   /* return this.http.put(this.url + id,post)*/
+  updatePosts(id:any):Observable<Posts>{
+  let ad = this.url + "/"
+  return this.http.put<Posts>(ad, id)
   }
 }

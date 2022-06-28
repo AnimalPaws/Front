@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, tap } from 'rxjs';
+import { SignInService } from '../LoginServices/sign-in.service';
 import { HttpClient } from '@angular/common/http';
 import { JwtHelperService } from '@auth0/angular-jwt';
 
@@ -6,19 +8,28 @@ import { JwtHelperService } from '@auth0/angular-jwt';
   providedIn: 'root'
 })
 export class AuthService {
-  private url = 'https://ap-auth-server.azurewebsites.net'
+  private isLog$ = new BehaviorSubject<boolean>(false)
+  private readonly TOKEN_NAME = 'Session Token'
+  isLog = this.isLog$.asObservable()
+  helper = new JwtHelperService();
+  decodeToken: any;
 
-  constructor(private http:HttpClient, private jwtHelper:JwtHelperService) { }
-
-  signin(user:any){
-    return this.http.post(`${this.url}/api/auth/authenticate/user`,user);
+  get token(){
+    return localStorage.getItem(this.TOKEN_NAME)
   }
 
-  isAuth():boolean{
-    const token:any = localStorage.getItem('token');
-    if(this.jwtHelper.isTokenExpired(token) || !localStorage.getItem('token')){
-      return false;
-    }
-    return true;
+  constructor(private sign:SignInService, private http:HttpClient) {
+    this.isLog$.next(!!this.token)
+  }
+
+  logIn(username: string, password: string){
+    return this.sign.logIn(username, password).pipe(
+      tap((res: any) =>{
+        localStorage.setItem(this.TOKEN_NAME, res.token)
+        this.isLog$.next(true)
+        this.decodeToken = this.helper.decodeToken(res.token);
+        console.log(this.decodeToken)
+      })
+    )
   }
 }

@@ -17,41 +17,44 @@ export function HttpLoaderFactory(http: HttpClient){
 import { LoadscriptsService } from './services/InterfaceServices/loadscripts.service';
 // Components //
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/HomeScreen/home/home.component';
-import { AboutComponent } from './components/HomeScreen/about/about.component';
-import { ErrorComponent } from './components/error/error.component';
-import { PreviewComponent } from './components/HomeScreen/preview/preview.component';
-import { SignUpComponent } from './components/Login/sign-up/sign-up.component';
-import { SignInComponent } from './components/Login/sign-in/sign-in.component';
-import { FirstPatchComponent } from './components/Updates/first-patch/first-patch.component';
-import { SecondPatchComponent } from './components/Updates/second-patch/second-patch.component';
-import { PatchNotesComponent } from './components/Updates/patch-notes/patch-notes.component';
-import { FunctionsComponent } from './components/HomeScreen/functions/functions.component';
-import { PostHomeComponent } from './components/Posts/post-home/post-home.component';
-import { PostAdoptComponent } from './components/Posts/post-adopt/post-adopt.component';
-import { PostComponent } from './components/HomeScreen/functions/post/post.component';
-import { ChatComponent } from './components/HomeScreen/functions/chat/chat.component';
-import { AccountComponent } from './components/HomeScreen/functions/account/account.component';
-import { PostProfileComponent } from './components/Posts/post-profile/post-profile.component';
-import { AdoptComponent } from './components/HomeScreen/functions/adopt/adopt.component';
-import { EntitiesComponent } from './components/HomeScreen/functions/entities/entities.component';
-import { HelpComponent } from './components/HomeScreen/functions/help/help.component';
-import { SignEntitiesComponent } from './components/Login/sign-entities/sign-entities.component';
-import { LoginOptionsComponent } from './components/Login/login-options/login-options.component';
-import { LoginEntitiesComponent } from './components/Login/login-entities/login-entities.component';
-import { AuthRoleComponent } from './components/Login/auth-role/auth-role.component';
-import { PostTrendComponent } from './components/Posts/post-trend/post-trend.component';
-import { PostAccountsComponent } from './components/Posts/post-accounts/post-accounts.component';
-import { PostEntitiesComponent } from './components/Posts/post-entities/post-entities.component';
-import { CreatePostComponent } from './components/Create/create-post/create-post.component';
-import { CreateYourPostsComponent } from './components/Create/create-your-posts/create-your-posts.component';
-import { CreateYourAdoptComponent } from './components/Create/create-your-adopt/create-your-adopt.component';
-import { CreateSettingsComponent } from './components/Create/create-settings/create-settings.component';
-import { CreateAccountComponent } from './components/Create/create-account/create-account.component';
-import { PostEditComponent } from './components/Posts/post-edit/post-edit.component';
-import { BoostedInfoComponent } from './components/Boosted/boosted-info/boosted-info.component';
-import { BoostedFormComponent } from './components/Boosted/boosted-form/boosted-form.component';
-import { ContactUsComponent } from './components/HomeScreen/contact-us/contact-us.component';
+import { HomeComponent } from './components/English/HomeScreen/home/home.component';
+import { AboutComponent } from './components/English/HomeScreen/about/about.component';
+import { ErrorComponent } from './components/404 Error/error/error.component';
+import { PreviewComponent } from './components/English/HomeScreen/preview/preview.component';
+import { SignUpComponent } from './components/English/Login/sign-up/sign-up.component';
+import { SignInComponent } from './components/English/Login/sign-in/sign-in.component';
+import { FirstPatchComponent } from './components/English/Updates/first-patch/first-patch.component';
+import { SecondPatchComponent } from './components/English/Updates/second-patch/second-patch.component';
+import { PatchNotesComponent } from './components/English/Updates/patch-notes/patch-notes.component';
+import { FunctionsComponent } from './components/English/HomeScreen/functions/functions.component';
+import { PostHomeComponent } from './components/English/Posts/post-home/post-home.component';
+import { PostAdoptComponent } from './components/English/Posts/post-adopt/post-adopt.component';
+import { PostComponent } from './components/English/HomeScreen/functions/post/post.component';
+import { ChatComponent } from './components/English/HomeScreen/functions/chat/chat.component';
+import { AccountComponent } from './components/English/HomeScreen/functions/account/account.component';
+import { PostProfileComponent } from './components/English/Posts/post-profile/post-profile.component';
+import { AdoptComponent } from './components/English/HomeScreen/functions/adopt/adopt.component';
+import { EntitiesComponent } from './components/English/HomeScreen/functions/entities/entities.component';
+import { HelpComponent } from './components/English/HomeScreen/functions/help/help.component';
+import { SignEntitiesComponent } from './components/English/Login/sign-entities/sign-entities.component';
+import { LoginOptionsComponent } from './components/English/Login/login-options/login-options.component';
+import { LoginEntitiesComponent } from './components/English/Login/login-entities/login-entities.component';
+import { AuthRoleComponent } from './components/English/Login/auth-role/auth-role.component';
+import { PostTrendComponent } from './components/English/Posts/post-trend/post-trend.component';
+import { PostAccountsComponent } from './components/English/Posts/post-accounts/post-accounts.component';
+import { PostEntitiesComponent } from './components/English/Posts/post-entities/post-entities.component';
+import { CreatePostComponent } from './components/English/Create/create-post/create-post.component';
+import { CreateYourPostsComponent } from './components/English/Create/create-your-posts/create-your-posts.component';
+import { CreateYourAdoptComponent } from './components/English/Create/create-your-adopt/create-your-adopt.component';
+import { CreateSettingsComponent } from './components/English/Create/create-settings/create-settings.component';
+import { CreateAccountComponent } from './components/English/Create/create-account/create-account.component';
+import { PostEditComponent } from './components/English/Posts/post-edit/post-edit.component';
+import { BoostedInfoComponent } from './components/English/Boosted/boosted-info/boosted-info.component';
+import { BoostedFormComponent } from './components/English/Boosted/boosted-form/boosted-form.component';
+import { ContactUsComponent } from './components/English/HomeScreen/contact-us/contact-us.component';
+import { HomeEsComponent } from './components/Spanish/HomeScreen/home-es/home-es.component';
+import { AboutEsComponent } from './components/Spanish/HomeScreen/about-es/about-es.component';
+/*import { AuthInterceptorProvider, JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interceptor';*/
 @NgModule({
   declarations: [
     // Components //
@@ -91,6 +94,8 @@ import { ContactUsComponent } from './components/HomeScreen/contact-us/contact-u
     BoostedInfoComponent,
     BoostedFormComponent,
     ContactUsComponent,
+    HomeEsComponent,
+    AboutEsComponent,
   ],
   imports: [
     // Angular Imports //
@@ -114,7 +119,8 @@ import { ContactUsComponent } from './components/HomeScreen/contact-us/contact-u
     // Dependencies Providers //
     {provide: JWT_OPTIONS, useValue: JWT_OPTIONS},
     LoadscriptsService,
-    JwtHelperService
+    JwtHelperService,
+    /*JwtInterceptorInterceptor*/
   ],
   bootstrap: [AppComponent]
 })
