@@ -54,6 +54,7 @@ import { BoostedFormComponent } from './components/English/Boosted/boosted-form/
 import { ContactUsComponent } from './components/English/HomeScreen/contact-us/contact-us.component';
 import { HomeEsComponent } from './components/Spanish/HomeScreen/home-es/home-es.component';
 import { AboutEsComponent } from './components/Spanish/HomeScreen/about-es/about-es.component';
+import { FunctionsEsComponent } from './components/Spanish/HomeScreen/functions-es/functions-es.component';
 /*import { AuthInterceptorProvider, JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interceptor';*/
 @NgModule({
   declarations: [
@@ -96,6 +97,7 @@ import { AboutEsComponent } from './components/Spanish/HomeScreen/about-es/about
     ContactUsComponent,
     HomeEsComponent,
     AboutEsComponent,
+    FunctionsEsComponent,
   ],
   imports: [
     // Angular Imports //

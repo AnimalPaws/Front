@@ -28,7 +28,7 @@ export class SignUpComponent implements OnInit {
       icon: 'success',
       title: 'Congrats',
       text: 'Your account has been successfully created try it out now',
-      footer: '<a href=""><a href="/Login/SignIn" style="color: #fff; text-decoration: none; background-color: #7066e0; padding: 9px; border-radius:5px;border:4px solid #a49df3;">Sign In</a>',
+      footer: '<a href=""><a href="SignIn/En" style="color: #fff; text-decoration: none; background-color: #7066e0; padding: 9px; border-radius:5px;border:4px solid #a49df3;">Sign In</a>',
       showCancelButton: false,
       showConfirmButton: false,
       showClass: {

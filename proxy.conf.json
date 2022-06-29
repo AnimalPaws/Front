@@ -1,7 +1,7 @@
 {
     "/api/*":{
-        "target": "http://localhost:46551",
-        "secure": false,
+        "target": "https://ap-auth-server.azurewebsites.net",
+        "secure": true,
         "logLevel": "debug"
     }
 }

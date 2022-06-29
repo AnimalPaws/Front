@@ -7,7 +7,7 @@ import { SignUp } from '../../models/LoginInterfaces/sign-up';
   providedIn: 'root'
 })
 export class SignInService {
-  url = 'https://ap-auth-server.azurewebsites.net/api/auth/authenticate/user'
+  url = 'https://ap-auth-server.azurewebsites.net/api/auth/authenticate'
 
   constructor(private http:HttpClient) { }
 

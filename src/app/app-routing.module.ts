@@ -9,6 +9,9 @@ import { PreviewComponent } from './components/English/HomeScreen/preview/previe
 import { ContactUsComponent } from './components/English/HomeScreen/contact-us/contact-us.component';
 // HomeScreen Components Spanish //
 import { HomeEsComponent } from './components/Spanish/HomeScreen/home-es/home-es.component';
+import { AboutEsComponent } from './components/Spanish/HomeScreen/about-es/about-es.component';
+// Functions Components Spanish //
+import { FunctionsEsComponent } from './components/Spanish/HomeScreen/functions-es/functions-es.component';
 // Functions Components //
 import { FunctionsComponent } from '../app/components/English/HomeScreen/functions/functions.component';
 import { AccountComponent } from './components/English/HomeScreen/functions/account/account.component';
@@ -62,7 +65,10 @@ const routes: Routes = [
   {path: 'BecomeAContribuitor/En', component:ContribuitorComponent},
   // HomeScreen Routes Spanish //
   {path: 'Es', component:HomeEsComponent},
-  // Functions Routes //
+  {path: 'AboutUs/Es', component:AboutEsComponent},
+  // Functions Routes Spanish //
+  {path: 'Functions/Es', component:FunctionsEsComponent},
+  // Functions Routes English //
   {path: 'Functions/En', component:FunctionsComponent},
   {path: 'AccountInfo/En', component:AccountComponent},
   {path: 'ChatInfo/En', component:ChatComponent},
@@ -83,13 +89,13 @@ const routes: Routes = [
   {path: 'SignUp/En', component:SignUpComponent},
   {path: 'Auth/En', component:AuthRoleComponent},
   // Posts Routes //
-  {path: 'Home/En', component:PostHomeComponent, canActivate: [AuthGuard]},
+  {path: 'Home/En', component:PostHomeComponent, /*canActivate: [AuthGuard]*/},
   {path: 'Trend/En', component:PostTrendComponent, canActivate: [AuthGuard]},
-  {path: 'Adopt/En', component:PostAdoptComponent, canActivate: [AuthGuard]},
+  {path: 'Adopt/En', component:PostAdoptComponent, /*canActivate: [AuthGuard]*/},
   {path: 'Entities/En', component:PostEntitiesComponent, canActivate: [AuthGuard]},
   {path: 'Accounts/En/:id', component:PostAccountsComponent, canActivate: [AuthGuard]},
   {path: 'Edit/En/:id', component:PostEditComponent, canActivate: [AuthGuard]},
-  {path: 'ChatRoom/En', component:PostChatRoomComponent, canActivate: [AuthGuard]},
+  {path: 'ChatRoom/En', component:PostChatRoomComponent, /*canActivate: [AuthGuard]*/},
   // Create Routes //
   {path: 'CreatePosts/En', component:CreatePostComponent, canActivate: [AuthGuard]},
   {path: 'YourPosts/En', component:CreateYourPostsComponent, canActivate: [AuthGuard]},
