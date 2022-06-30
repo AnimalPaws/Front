@@ -1,0 +1,59 @@
+<body>
+  <div class="caja_div">
+    <p class="animate__animated  animate__flipInX p">Choose An Option</p>
+  </div>
+  <div class="general-container">
+    <input class="radio" type="radio" name="card" id="card-1" checked />
+    <label class="content qi" for="card-1">
+      <span class="icon">
+        <i class="fas fa-sun"></i>
+      </span>
+      <a href="/Login/SignIn">
+        <h3 class="card-title">
+          Serra da Freita, Vale de Cambra, Portugal
+          <span class="subtitle">@hed</span>
+        </h3>
+      </a>
+    </label>
+    <input class="radio" type="radio" name="card" id="card-2" />
+    <label class="content" for="card-2">
+      <span class="icon">
+        <fa-icon [icon]="faRightToBracket"></fa-icon>
+      </span>
+      <h3 class="card-title">
+        Sign In
+        <a routerLink="/SignIn/En"><strong> Enter -></strong></a>
+      </h3>
+    </label>
+    <input class="radio" type="radio" name="card" id="card-3" />
+    <label class="content" for="card-3">
+      <span class="icon">
+        <fa-icon [icon]="faUser"></fa-icon>
+      </span>
+      <h3 class="card-title">
+        Sign Up
+        <a routerLink="/SignUp/En"><strong> Enter -></strong></a>
+      </h3>
+    </label>
+    <input class="radio" type="radio" name="card" id="card-4" />
+    <label class="content" for="card-4">
+      <span class="icon">
+        <fa-icon [icon]="faBuilding"></fa-icon>
+      </span>
+      <h3 class="card-title">
+        Sign Up As An Entity
+        <a routerLink="/Auth/En"><strong> Enter -></strong></a>
+      </h3>
+    </label>
+    <input class="radio" type="radio" name="card" id="card-5" />
+    <label class="content" for="card-5">
+      <span class="icon">
+        <fa-icon [icon]="faUserShield"></fa-icon>
+      </span>
+      <h3 class="card-title">
+        Sign Up As Administrator
+        <a routerLink="/Auth/En"><strong> Enter -></strong></a>
+      </h3>
+    </label>
+  </div>
+</body>
