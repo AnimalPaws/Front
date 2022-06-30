@@ -1,7 +1,7 @@
-export interface UserI{
+export interface ProfileI{
   id: string,
   first_Name: string,
-  picture:string;
+  picture:string,
   middle_Name: string,
   surname: string,
   last_Name: string,

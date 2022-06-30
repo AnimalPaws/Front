@@ -7,7 +7,7 @@ import { UserI } from 'src/app/models/PostInterfaces/users';
   providedIn: 'root'
 })
 export class UsersService {
-  url = 'https://ap-api-server.azurewebsites.net/Profile'
+  url = 'https://ap-api-server.azurewebsites.net/api/Profile'
 
   constructor(private http: HttpClient ) { }
 

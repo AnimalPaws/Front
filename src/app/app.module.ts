@@ -55,6 +55,7 @@ import { ContactUsComponent } from './components/English/HomeScreen/contact-us/c
 import { HomeEsComponent } from './components/Spanish/HomeScreen/home-es/home-es.component';
 import { AboutEsComponent } from './components/Spanish/HomeScreen/about-es/about-es.component';
 import { FunctionsEsComponent } from './components/Spanish/HomeScreen/functions-es/functions-es.component';
+import { UsernameComponent } from './components/English/UI/username/username.component';
 /*import { AuthInterceptorProvider, JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interceptor';*/
 @NgModule({
   declarations: [
@@ -98,6 +99,7 @@ import { FunctionsEsComponent } from './components/Spanish/HomeScreen/functions-
     HomeEsComponent,
     AboutEsComponent,
     FunctionsEsComponent,
+    UsernameComponent,
   ],
   imports: [
     // Angular Imports //

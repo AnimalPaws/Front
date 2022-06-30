@@ -100,48 +100,73 @@ flex-direction: column;
 
 
 .logo {
-font-family: $title-font;
-font-size: 15px;
-color: #fff;
-font-weight: 600;
-text-align: center;
-height: 68px;
-line-height: 68px;
-letter-spacing: 4px;
-position: sticky;
-top: 0;
-}
-
-.side-title {
-font-family: $title-font;
-color: $side-title;
-font-size: 15px;
-font-weight: 600;
-margin-bottom: 20px;
-}
-
-.side-menu {
-display: flex;
-flex-direction: column;
-font-size: 15px;
-white-space: nowrap;
-svg {
-  margin-right: 16px;
-  width: 16px;
-}
-a {
-  text-decoration: none;
-  color: #9c9cab;
-  display: flex;
-  align-items: center;
-  &:hover {
+  font-family: $title-font;
+  font-size: 15px;
   color: #fff;
+  font-weight: 600;
+  text-align: center;
+  height: 68px;
+  line-height: 68px;
+  letter-spacing: 4px;
+  position: sticky;
+  top: 0;
   }
-  &:not(:last-child) {
+
+  .side-title {
+  font-family: $title-font;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
   margin-bottom: 20px;
   }
-}
-}
+
+  .side-menu {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  white-space: nowrap;
+  svg {
+    margin-right: 16px;
+    width: 16px;
+  }
+  a {
+    text-decoration: none;
+    color: #5c5e6e;
+    display: flex;
+    align-items: center;
+    &:hover {
+    color: #fff;
+    }
+    &:not(:last-child) {
+    margin-bottom: 20px;
+    }
+  }
+  .awesome-icons{
+    margin-right: 16px;
+    width: 16px;
+    color: #0057ff;
+  }
+  .awesome-icons-h{
+    margin-right: 16px;
+    width: 16px;
+    color: #fd1d1d;
+  }
+  .awesome-icons-p{
+    margin-right: 16px;
+    width: 16px;
+    color: #38ef7d;
+  }
+  .awesome-icons-ha{
+    margin-right: 16px;
+    width: 16px;
+    color: #f953c6;
+  }
+  .awesome-icons-m{
+    margin-right: 16px;
+    width: 16px;
+    color: #7303c0;
+  }
+  }
 
 .follow-me {
 text-decoration: none;
@@ -480,10 +505,51 @@ margin-right: 15px;
 object-fit: cover;
 object-position: center;
 }
+.user-img-h {
+  border-radius: 50%;
+  width: 45%;
+  height: 45%;
+  object-position: center;
+  }
 
 .username {
 font-size: 15px;
 font-family: $title-font;
+}
+$white: #FFF;
+$gray: #888;
+$red: indianred;
+
+#like-button {
+  color: $gray;
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif;
+  background-color: transparent;
+  border: 0.1em;
+  border-radius: 50px;
+  padding: 0.333em 1em 0.25em;
+  line-height: 1.2em;
+  cursor: pointer;
+  &:hover {
+    color: $red;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &.selected {
+    color: $white;
+    background-color: $red;
+    border-color: $red;
+  }
+  .heart-icon {
+    display: inline-block;
+    fill: currentColor;
+    width: 23px;
+    height: 23px;
+    margin-right: 0.2em;
+  }
 }
 
 .status-menu {
@@ -969,7 +1035,8 @@ display: none;
 .contacts{
   height: auto;
   flex-grow: 1;
-overflow: auto;
+  overflow: auto;
+  background-color: #e6e6e6;
 }
 
 .follow-me{
@@ -979,7 +1046,8 @@ overflow: auto;
 #wrapp{
   height: 900px;
   flex-grow: 1;
-overflow: auto;
+  overflow: auto;
+  background-color: #e6e6e6;
 }
 
 .search-bar{
@@ -994,6 +1062,29 @@ overflow: auto;
   flex-direction: column;
   width: 80%;
   background-color: #181d2f;
+}
+
+
+.timeline-right{
+  width: 80%;
+}
+
+.main-post{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  overflow: auto;
+  height: auto;
+  background-color: #e2dbdb;
+}
+
+/*------------------------RESPONSIVE---------------------------------*/
+
+@media screen and (max-width:1280px){
+  #content-chats{
+    height: 800px;
+  }
 }
 
 
@@ -1023,6 +1114,6 @@ overflow: auto;
 
 @media screen and (max-width:412px){
   .padd{
-    
+
   }
 }

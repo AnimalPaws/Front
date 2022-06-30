@@ -50,6 +50,8 @@ import { CreateAccountComponent } from './components/English/Create/create-accou
 import { ErrorComponent } from './components/404 Error/error/error.component';
 // External Dependencies //
 /*import { AuthGuard } from './guards/auth.guard';*/
+import { UsernameComponent } from './components/English/UI/username/username.component';
+import { PostProfileComponent } from './components/English/Posts/post-profile/post-profile.component';
 import { importExpr } from '@angular/compiler/src/output/output_ast';
 import { AuthGuard } from './guards/auth.guard';
 
@@ -96,12 +98,13 @@ const routes: Routes = [
   {path: 'Accounts/En/:id', component:PostAccountsComponent, canActivate: [AuthGuard]},
   {path: 'Edit/En/:id', component:PostEditComponent, canActivate: [AuthGuard]},
   {path: 'ChatRoom/En', component:PostChatRoomComponent, /*canActivate: [AuthGuard]*/},
+  {path: 'Chat/En', component:UsernameComponent},
   // Create Routes //
   {path: 'CreatePosts/En', component:CreatePostComponent, canActivate: [AuthGuard]},
   {path: 'YourPosts/En', component:CreateYourPostsComponent, canActivate: [AuthGuard]},
   {path: 'YourAdoptions/En', component:CreateYourAdoptComponent, canActivate: [AuthGuard]},
   {path: 'Settings/En', component:CreateSettingsComponent, canActivate: [AuthGuard]},
-  {path: 'YourAccount/En', component:CreateAccountComponent, canActivate: [AuthGuard]},
+  {path: 'YourAccount/En', component:PostProfileComponent, canActivate: [AuthGuard]},
   // Error 404 Route //
   {path: '**', component: ErrorComponent}
 ];

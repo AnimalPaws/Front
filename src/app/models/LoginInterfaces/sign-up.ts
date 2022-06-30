@@ -1,6 +1,7 @@
 export interface SignUp {
   first_Name: string;
   middle_Name: string;
+  picture:string;
   surname: string;
   last_Name: string;
   username: string;
