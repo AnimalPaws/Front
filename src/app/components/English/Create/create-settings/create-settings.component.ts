@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateSettingsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
+  onSubmit(user: any){
+    this.http.post('https://ap-api-server.azurewebsites.net/api/Adoption', user)
+    .subscribe((res)=>{
+      console.warn("Response", res)
+    })
+  }
 
   ngOnInit(): void {
   }

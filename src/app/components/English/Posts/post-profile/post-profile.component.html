@@ -1,4 +1,5 @@
-<div id="contenido-section">
+<!--Inital Section-->
+<div id="content-section" *ngIf="authService.isLog | async">
   <div class="container padd" x-data="{ rightSide: false, leftSide: false }">
       <div class="left-side" :class="{'active' : leftSide}">
           <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -6,6 +7,9 @@
       <path d="M19 12H5M12 19l-7-7 7-7"/>
     </svg>
         </div>
+
+
+        <!--Main Menu-->
         <div id="side-wrapper">
           <a><div class="logo"><img src="../../../../../assets/img/Posts/normal_user.png" alt="" srcset=""></div></a>
           <div class="side-wrapper">
@@ -15,21 +19,21 @@
                 <fa-icon [icon]="faHome" class="awesome-icons"></fa-icon>
               <div>Home</div>
               </a>
-              <a routerLink="/Trend/En">
+              <a routerLink="/ForYou/En">
                 <fa-icon [icon]="faHeart" class="awesome-icons-h"></fa-icon>
-              <div>For You</div>
+              <div>Para Ti</div>
               </a>
               <a routerLink="/Adopt/En">
                 <fa-icon [icon]="faPaw" class="awesome-icons-p"></fa-icon>
-              <div>Adoptions</div>
+              <div>Adopciones</div>
               </a>
               <a routerLink="/Entities/En">
                 <fa-icon [icon]="faHandHoldingHeart" class="awesome-icons-ha"></fa-icon>
-                <div>Entities</div>
+                <div>Entidades</div>
               </a>
-              <a routerLink="/Accounts/En">
+              <a routerLink="/MeetPeople/En">
                 <fa-icon [icon]="faUsers" class="awesome-icons-m"></fa-icon>
-              <div>Meet People</div>
+              <div>Conoce Usuarios</div>
               </a>
             </div>
           </div>
@@ -37,99 +41,52 @@
 
           <!--Create Menu-->
           <div class="side-wrapper">
-            <div class="side-title">Create</div>
+            <div class="side-title">Crear</div>
             <div class="side-menu">
               <a routerLink="/CreatePosts/En">
                 <fa-icon [icon]="faPlus" class="awesome-icons-p"></fa-icon>
-                <div>Create Post</div>
+                <div>Crear Anuncio</div>
               </a>
-              <a routerLink="/Settings/En">
-                <fa-icon [icon]="faGear" class="awesome-icons"></fa-icon>
-                Settings
-              </a>
-              <a routerLink="/YourAccount/En">
-                <fa-icon [icon]="faUser" class="awesome-icons-m"></fa-icon>
-                Your Account
+              <a routerLink="/CreateAdopt/En">
+                <fa-icon [icon]="faPlus" class="awesome-icons-h"></fa-icon>
+                <div>Crear Adopcion</div>
               </a>
               <a routerLink="/">
                 <fa-icon [icon]="faRightFromBracket" class="awesome-icons-h"></fa-icon>
-                Log Out
+                Cerrar Sesion
               </a>
             </div>
           </div>
         </div>
       </div>
+
+      <!--Main Section-->
       <div class="main">
-        <div class="main-container">
-          <div class="profile">
-            <div class="profile-avatar">
-              <img src="https://avatars.githubusercontent.com/u/82052937?v=4" alt="" class="profile-img">
-              <div class="profile-name" formControlName="title">Julian Lozada</div>
+        <div class="main-post">
+          <div class="timeline-right">
+            <div class="status box">
             </div>
-            <img src="https://as1.ftcdn.net/v2/jpg/03/52/39/00/1000_F_352390061_Bem8aYkzfGhIObTC4fXhf0PmKQjWM1wN.jpg" alt="" class="profile-cover">
-            <div class="profile-menu">
-              <a class="profile-menu-link active">Profile</a>
-            </div>
-          </div>
-          <div class="timeline">
-            <div class="timeline-left">
-              <div class="intro box">
-                <div class="intro-title">
-                  About Me
-                  <button class="intro-menu"></button>
-                </div>
-                <div class="info">
-                  <div class="info-item">
-                    Developer in <a href="#">Animal Paws</a>
-                  </div>
-                  <div class="info-item">
-                    Live in <a href="#">Upside Down</a>
-                  </div>
-                  <div class="info-item">
-                    Description: Yeah, yeah I am admin of Animal Paws if you look at me bad I will ban you.<a href="#"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="pages box">
-                <div class="intro-title">
-                  Your Badges
-                  <button class="intro-menu"></button>
-                </div>
-                <div class="user">
-                  <img src="https://media.discordapp.net/attachments/934262348590493790/983399849821093908/Humming.png?width=624&height=468" alt="" class="user-img-h">
-                </div>
-                <div class="user">
-                  <div class="username"><strong>허밍 달:</strong> For our great developer, thanks for all the moments and great help, you will always be with us.
-                    “Here’s To You, The Brightest Star In The Night Sky”
-                    </div>
+            <div class="album box" *ngFor="let userChat of userChat">
+              <div class="status-main">
+                <img src="{{userChat.picture}}" class="status-img" />
+                <div class="album-detail">
+                  <div class="album-title">{{userChat.first_Name}} {{userChat.middle_Name}} {{userChat.surname}} {{userChat.last_Name}}</div>
+                  <div class="album-date">{{userChat.email}}</div>
+                  <div class="album-date">{{userChat.username}}</div>
+              <div class="album-content">
+                <div class="album-photos">
                 </div>
               </div>
             </div>
-            <div class="timeline-right">
-              <div class="album box" *ngFor="let post of post">
-                <div class="status-main">
-                  <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" class="status-img" />
-                  <div class="album-detail">
-                    <div class="album-title"><strong>CutieCat </strong>Posted An <span>Announce</span></div>
-                    <div class="album-date">- {{post.title}}</div>
-                  </div>
-                  <button class="intro-menu" (click)="editPost(post.id)"></button>
-                </div>
-                <div class="album-content">{{post.description}}
-                  <div class="album-photos">
-                    <img src="{{post.image}}" alt="" class="album-photo" />
-                  </div>
-                </div>
-                <div class="album-actions">
-                  <button type="button" id="like-button" (click)="likeButtonClick()">
-                    <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M91.6 13A28.7 28.7 0 0 0 51 13l-1 1-1-1A28.7 28.7 0 0 0 8.4 53.8l1 1L50 95.3l40.5-40.6 1-1a28.6 28.6 0 0 0 0-40.6z"/></svg>
-                    {{numberOfLikes}} </button>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
+
+      <!--User UI Section-->
       <div class="right-side" :class="{ 'active': rightSide }">
         <div id="content-chats">
           <div class="account">
@@ -158,7 +115,7 @@
               <div class="side-title">CHATS</div>
 
 
-                <div class="user" *ngFor="let userChat of userChat" (click)="viewProfile(userChat.id)">
+                <div class="user" *ngFor="let userChat of userChat" routerLink="/ChatRoom/En">
                   <img src="{{userChat.picture}}" class="user-img">
                   <div class="username">{{userChat.username}}
                     <div class="user-status"></div>

@@ -4,7 +4,7 @@
 		<div class="forms-container">
 		  <div class="signin-signup">
 			<form (ngSubmit)="submitForm()" [formGroup]="form" autocomplete="off" class="sign-in-form">
-			  <h2 class="title">Sign in</h2>
+			  <h2 class="title">Registrate</h2>
 			  <div class="input-field">
 				<i class="fas fa-envelope"></i>
 				<input type="text" formControlName="username" placeholder="Email" />
@@ -13,18 +13,18 @@
 				<i class="fas fa-lock"></i>
 				<input type="password" formControlName="password" placeholder="Password" />
 			  </div>
-			  <button type="submit" class="btn">Log In</button>
+			  <button type="submit" class="btn">Iniciar Sesion</button>
 			</form>
 		</div>
 		<div class="panels-container">
 			<div class="panel left-panel">
 			  <div class="content">
-				<h3>New here ?</h3>
+				<h3>¿Nuevo Aqui?</h3>
 				<p>
-				  Register to get access to all Animal Paws features
+				  Regístrese Para Acceder A Todas Las Funciones De Animal Paws
 				</p>
 				<button class="btn transparent" id="sign-up-btn" routerLink="/SignUp/En">
-				  Sign up 
+				  Registrate
 				</button>
 			  </div>
 			  <img src="../../../../assets/img/Login/cute-dog.png" class="image" alt="" />

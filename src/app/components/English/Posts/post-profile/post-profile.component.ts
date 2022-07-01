@@ -22,6 +22,7 @@ import { AuthService } from '../../../../services/AuthServices/auth.service';
 import { SignInService } from '../../../../services/LoginServices/sign-in.service';
 import { SignUp } from '../../../../models/LoginInterfaces/sign-up';
 import { faSplotch } from '@fortawesome/free-solid-svg-icons';
+import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { LoadscriptsService } from '../../../../services/InterfaceServices/loadscripts.service';
 
 @Component({
@@ -49,6 +50,7 @@ export class PostProfileComponent implements OnInit {
   faRightFromBracket = faRightFromBracket;
   faMobileScreenButton = faMobileScreenButton;
   faSmile = faSplotch;
+  faLanguage = faLanguage;
 
   constructor(private http:HttpClient, public posts:PostService, private ads:AdsService, private usersChat:UsersService, private router:Router, public authService:AuthService, private sign:SignInService, private loadScripts:LoadscriptsService) { }
 

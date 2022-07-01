@@ -1,1 +1,95 @@
-<p>create-your-adopt works!</p>
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <div class="form_wrapper">
+    <div class="form_container">
+      <div class="title_container">
+        <h2>Sign Up In Animal Paws</h2>
+      </div>
+      <div class="row clearfix">
+        <div class="">
+          <form id='register-form' autocomplete="off" #userAccount="ngForm" (ngSubmit)="onSubmit(userAccount.value)">
+            <div class="row clearfix">
+              <div class="col_half">
+                <div class="input_field">
+                  <span class="fa">
+                    <i aria-hidden="true" class="fa fa-user"></i>
+                  </span>
+                  <input type="text" name="names" class="input" placeholder="Names" ngModel/>
+                </div>
+              </div>
+              <div class="col_half">
+                <div class="input_field">
+                  <span>
+                    <i aria-hidden="true" class="fa fa-user"></i>
+                  </span>
+                  <input type="text" name="last_Name" class="input" placeholder="Last Names" required ngModel/>
+                </div>
+              </div>
+            </div>
+            <div class="input_field">
+              <span>
+                <i aria-hidden="true" class="fa fa-envelope"></i>
+              </span>
+              <input type="text" name="address" class="input" placeholder="Address" required ngModel/>
+            </div>
+            <div class="input_field">
+              <span><i aria-hidden="true" class="fa fa-lock">
+                </i>
+              </span>
+              <input type="email" name="email" class="input" placeholder="Email" required ngModel/>
+            </div>
+            <div class="input_field">
+              <span>
+                <i aria-hidden="true" class="fa fa-user"></i>
+              </span>
+              <input type="text" name="phone_Number" class="input" placeholder="Phone" required ngModel/>
+            </div>
+            <div class="input_field">
+              <span>
+                <i aria-hidden="true" class="fa fa-phone"></i>
+              </span>
+              <input type="text" name="specie" class="input" placeholder="Specie" required ngModel/>
+            </div>
+            <div class="input_field">
+              <span>
+                <i aria-hidden="true" class="fa fa-venus"></i>
+              </span>
+              <input type="text" name="breed" class="input" placeholder="Breed" required ngModel/>
+            </div>
+            <div class="input_field">
+              <span>
+                <i aria-hidden="true" class="fa fa-calendar"></i>
+              </span>
+              <input type="text" name="sex" class="input" placeholder="Sex" required ngModel/>
+            </div>
+            <div class="input_field">
+              <span>
+                <i aria-hidden="true" class="fa fa-flag"></i>
+              </span>
+              <input type="text" name="weight" class="input" placeholder="Weight" required ngModel/>
+            </div>
+            <div class="input_field">
+              <span>
+                <i aria-hidden="true" class="fa fa-city"></i>
+              </span>
+              <input type="text" name="is_Sterilized" class="input" placeholder="Is Sterilized?" required ngModel/>
+            </div>
+            <div class="input_field">
+              <span>
+                <i aria-hidden="true" class="fa fa-city"></i>
+              </span>
+              <input type="text" name="is_Deworming" class="input" placeholder="Is Deworming?" required ngModel/>
+            </div>
+            <div class="input_field">
+              <span>
+                <i aria-hidden="true" class="fa fa-city"></i>
+              </span>
+              <input type="text" name="reporter_Firm" class="input" placeholder="Reporter Firm" required ngModel/>
+            </div>
+    <input id='submit-data' class="button" type="submit" value="Next"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>

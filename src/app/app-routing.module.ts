@@ -92,7 +92,7 @@ const routes: Routes = [
   {path: 'Auth/En', component:AuthRoleComponent},
   // Posts Routes //
   {path: 'Home/En', component:PostHomeComponent, /*canActivate: [AuthGuard]*/},
-  {path: 'Trend/En', component:PostTrendComponent, canActivate: [AuthGuard]},
+  {path: 'ForYou/En', component:PostTrendComponent, canActivate: [AuthGuard]},
   {path: 'Adopt/En', component:PostAdoptComponent, /*canActivate: [AuthGuard]*/},
   {path: 'Entities/En', component:PostEntitiesComponent, canActivate: [AuthGuard]},
   {path: 'Accounts/En/:id', component:PostAccountsComponent, canActivate: [AuthGuard]},
@@ -102,9 +102,9 @@ const routes: Routes = [
   // Create Routes //
   {path: 'CreatePosts/En', component:CreatePostComponent, canActivate: [AuthGuard]},
   {path: 'YourPosts/En', component:CreateYourPostsComponent, canActivate: [AuthGuard]},
-  {path: 'YourAdoptions/En', component:CreateYourAdoptComponent, canActivate: [AuthGuard]},
-  {path: 'Settings/En', component:CreateSettingsComponent, canActivate: [AuthGuard]},
-  {path: 'YourAccount/En', component:PostProfileComponent, canActivate: [AuthGuard]},
+  {path: 'Me/En', component:CreateYourAdoptComponent, canActivate: [AuthGuard]},
+  {path: 'CreateAdopt/En', component:CreateSettingsComponent, canActivate: [AuthGuard]},
+  {path: 'MeetPeople/En', component:PostProfileComponent, canActivate: [AuthGuard]},
   // Error 404 Route //
   {path: '**', component: ErrorComponent}
 ];

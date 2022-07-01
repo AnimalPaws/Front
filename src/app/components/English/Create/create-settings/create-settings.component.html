@@ -1,1 +1,23 @@
-<p>create-settings works!</p>
+<body>
+  <div class="contenido-section">
+      <div class="contenido">
+          <div class="contenido-imagen">
+              <div class="imagen">
+                  <img src="../../../../../assets/img/Posts/perritoa.jpg" alt="">
+              </div>
+          </div>
+
+          <div class="contenido-formulario">
+              <form action="#" #userAccount="ngForm" (ngSubmit)="onSubmit(userAccount.value)">
+                  <p class="title">Create Adoptions</p>
+                  <input type="text" name="profile_Id" class="input" placeholder="Announce ID" required ngModel/>
+                  <input type="text" name="title" class="input" placeholder="Username To Contact" required ngModel/>
+                  <input type="file" name="image" class="input" placeholder="Image" required ngModel/>
+                  <input type="text" name="description" class="input" placeholder="Description" required ngModel/>
+                  <br>
+                  <input id='submit-data' class="button" type="submit" value="Create Post"/>
+              </form>
+          </div>
+      </div>
+  </div>
+</body>

@@ -19,21 +19,21 @@
                 <fa-icon [icon]="faHome" class="awesome-icons"></fa-icon>
               <div>Home</div>
               </a>
-              <a routerLink="/Trend/En">
+              <a routerLink="/ForYou/En">
                 <fa-icon [icon]="faHeart" class="awesome-icons-h"></fa-icon>
-              <div>For You</div>
+              <div>Para Ti</div>
               </a>
               <a routerLink="/Adopt/En">
                 <fa-icon [icon]="faPaw" class="awesome-icons-p"></fa-icon>
-              <div>Adoptions</div>
+              <div>Adopciones</div>
               </a>
               <a routerLink="/Entities/En">
                 <fa-icon [icon]="faHandHoldingHeart" class="awesome-icons-ha"></fa-icon>
-                <div>Entities</div>
+                <div>Entidades</div>
               </a>
-              <a routerLink="/Accounts/En">
+              <a routerLink="/MeetPeople/En">
                 <fa-icon [icon]="faUsers" class="awesome-icons-m"></fa-icon>
-              <div>Meet People</div>
+              <div>Conoce Usuarios</div>
               </a>
             </div>
           </div>
@@ -41,29 +41,24 @@
 
           <!--Create Menu-->
           <div class="side-wrapper">
-            <div class="side-title">Create</div>
+            <div class="side-title">Crear</div>
             <div class="side-menu">
               <a routerLink="/CreatePosts/En">
                 <fa-icon [icon]="faPlus" class="awesome-icons-p"></fa-icon>
-                <div>Create Post</div>
+                <div>Crear Anuncio</div>
               </a>
-              <a routerLink="/Settings/En">
-                <fa-icon [icon]="faGear" class="awesome-icons"></fa-icon>
-                Settings
-              </a>
-              <a routerLink="/YourAccount/En">
-                <fa-icon [icon]="faUser" class="awesome-icons-m"></fa-icon>
-                Your Account
+              <a routerLink="/CreateAdopt/En">
+                <fa-icon [icon]="faPlus" class="awesome-icons-h"></fa-icon>
+                <div>Crear Adopcion</div>
               </a>
               <a routerLink="/">
                 <fa-icon [icon]="faRightFromBracket" class="awesome-icons-h"></fa-icon>
-                Log Out
+                Cerrar Sesion
               </a>
             </div>
           </div>
         </div>
       </div>
-
 
       <!--Main Section-->
       <div class="main">
@@ -75,7 +70,7 @@
               <div class="status-main">
                 <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" class="status-img" />
                 <div class="album-detail">
-                  <div class="album-title"><strong>CutieCat </strong>Posted An <span>Announce</span></div>
+                  <div class="album-title"><strong>Un Lindo Gatito </strong>ha hecho un <span>Anuncio</span></div>
                   <div class="album-date">- {{post.title}}</div>
                 </div>
                 <button class="intro-menu" (click)="editPost(post.id)"></button>
@@ -104,7 +99,7 @@
             <button class="account-button">
               <fa-icon [icon]="faMobileScreenButton" class="awesome-phone"></fa-icon>
             </button>
-            <span class="account-user">You're Guess
+            <span class="account-user">Curious User :3
               <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="" class="account-profile" alt="">
               <span>▼</span>
             </span>

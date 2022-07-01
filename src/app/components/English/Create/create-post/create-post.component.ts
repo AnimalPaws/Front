@@ -8,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreatePostComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
+  onSubmit(user: any){
+    this.http.post('https://ap-api-server.azurewebsites.net/api/Announce', user)
+    .subscribe((res)=>{
+      console.warn("Response", res)
+    })
+  }
 
   ngOnInit(): void {
   }

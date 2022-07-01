@@ -1,1 +1,149 @@
-<p>post-entities works!</p>
+<!--Inital Section-->
+<div id="content-section" *ngIf="authService.isLog | async">
+  <div class="container padd" x-data="{ rightSide: false, leftSide: false }">
+      <div class="left-side" :class="{'active' : leftSide}">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+        </div>
+
+
+        <!--Main Menu-->
+        <div id="side-wrapper">
+          <a><div class="logo"><img src="../../../../../assets/img/Posts/normal_user.png" alt="" srcset=""></div></a>
+          <div class="side-wrapper">
+            <div class="side-title">MENU</div>
+            <div class="side-menu">
+              <a routerLink="/Home/En">
+                <fa-icon [icon]="faHome" class="awesome-icons"></fa-icon>
+              <div>Home</div>
+              </a>
+              <a routerLink="/ForYou/En">
+                <fa-icon [icon]="faHeart" class="awesome-icons-h"></fa-icon>
+              <div>Para Ti</div>
+              </a>
+              <a routerLink="/Adopt/En">
+                <fa-icon [icon]="faPaw" class="awesome-icons-p"></fa-icon>
+              <div>Adopciones</div>
+              </a>
+              <a routerLink="/Entities/En">
+                <fa-icon [icon]="faHandHoldingHeart" class="awesome-icons-ha"></fa-icon>
+                <div>Entidades</div>
+              </a>
+              <a routerLink="/MeetPeople/En">
+                <fa-icon [icon]="faUsers" class="awesome-icons-m"></fa-icon>
+              <div>Conoce Usuarios</div>
+              </a>
+            </div>
+          </div>
+
+
+          <!--Create Menu-->
+          <div class="side-wrapper">
+            <div class="side-title">Crear</div>
+            <div class="side-menu">
+              <a routerLink="/CreatePosts/En">
+                <fa-icon [icon]="faPlus" class="awesome-icons-p"></fa-icon>
+                <div>Crear Anuncio</div>
+              </a>
+              <a routerLink="/CreatePosts/En">
+                <fa-icon [icon]="faPlus" class="awesome-icons-h"></fa-icon>
+                <div>Crear Adopcion</div>
+              </a>
+              <a routerLink="/">
+                <fa-icon [icon]="faRightFromBracket" class="awesome-icons-h"></fa-icon>
+                Cerrar Sesion
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Main Section-->
+      <div class="main">
+        <div class="main-post">
+          <div class="timeline-right">
+            <div class="status box">
+            </div>
+            <div class="album box" *ngFor="let entity of entity">
+              <div class="status-main">
+                <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" class="status-img" />
+                <div class="album-detail">
+                  <div class="album-title"><strong>Una hermosa entidad </strong>ha hecho una <span>donacion</span></div>
+                  <div class="album-date">- {{entity.title}}</div>
+                </div>
+                <button class="intro-menu"></button>
+              </div>
+              <div class="album-content">{{entity.description}}
+                <div class="album-photos">
+                  <img src="{{entity.image}}" alt="" class="album-photo" />
+                </div>
+              </div>
+              <div class="album-actions">
+                <button type="button" id="like-button" (click)="likeButtonClick()" routerLink="">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="heart-icon" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M512 80C512 98.01 497.7 114.6 473.6 128C444.5 144.1 401.2 155.5 351.3 158.9C347.7 157.2 343.9 155.5 340.1 153.9C300.6 137.4 248.2 128 192 128C183.7 128 175.6 128.2 167.5 128.6L166.4 128C142.3 114.6 128 98.01 128 80C128 35.82 213.1 0 320 0C426 0 512 35.82 512 80V80zM160.7 161.1C170.9 160.4 181.3 160 192 160C254.2 160 309.4 172.3 344.5 191.4C369.3 204.9 384 221.7 384 240C384 243.1 383.3 247.9 381.9 251.7C377.3 264.9 364.1 277 346.9 287.3C346.9 287.3 346.9 287.3 346.9 287.3C346.8 287.3 346.6 287.4 346.5 287.5L346.5 287.5C346.2 287.7 345.9 287.8 345.6 288C310.6 307.4 254.8 320 192 320C132.4 320 79.06 308.7 43.84 290.9C41.97 289.9 40.15 288.1 38.39 288C14.28 274.6 0 258 0 240C0 205.2 53.43 175.5 128 164.6C138.5 163 149.4 161.8 160.7 161.1L160.7 161.1zM391.9 186.6C420.2 182.2 446.1 175.2 468.1 166.1C484.4 159.3 499.5 150.9 512 140.6V176C512 195.3 495.5 213.1 468.2 226.9C453.5 234.3 435.8 240.5 415.8 245.3C415.9 243.6 416 241.8 416 240C416 218.1 405.4 200.1 391.9 186.6V186.6zM384 336C384 354 369.7 370.6 345.6 384C343.8 384.1 342 385.9 340.2 386.9C304.9 404.7 251.6 416 192 416C129.2 416 73.42 403.4 38.39 384C14.28 370.6 .0003 354 .0003 336V300.6C12.45 310.9 27.62 319.3 43.93 326.1C83.44 342.6 135.8 352 192 352C248.2 352 300.6 342.6 340.1 326.1C347.9 322.9 355.4 319.2 362.5 315.2C368.6 311.8 374.3 308 379.7 304C381.2 302.9 382.6 301.7 384 300.6L384 336zM416 278.1C434.1 273.1 452.5 268.6 468.1 262.1C484.4 255.3 499.5 246.9 512 236.6V272C512 282.5 507 293 497.1 302.9C480.8 319.2 452.1 332.6 415.8 341.3C415.9 339.6 416 337.8 416 336V278.1zM192 448C248.2 448 300.6 438.6 340.1 422.1C356.4 415.3 371.5 406.9 384 396.6V432C384 476.2 298 512 192 512C85.96 512 .0003 476.2 .0003 432V396.6C12.45 406.9 27.62 415.3 43.93 422.1C83.44 438.6 135.8 448 192 448z"/></svg>
+                  {{entity.goal}} COP </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--User UI Section-->
+      <div class="right-side" :class="{ 'active': rightSide }">
+        <div id="content-chats">
+          <div class="account">
+            <button class="account-button">
+              <fa-icon [icon]="faMobileScreenButton" class="awesome-phone"></fa-icon>
+            </button>
+            <span class="account-user">Curious User :3
+              <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="" class="account-profile" alt="">
+              <span>▼</span>
+            </span>
+          </div>
+
+
+          <!--ADS Section-->
+          <div id="wrapp">
+            <div class="ads">
+              <div class="side-title"></div>
+              <div>
+                <h3></h3>
+                <img src="" alt="">
+            </div>
+
+
+            <!--Chat Section-->
+            <div class="contacts">
+              <div class="side-title">CHATS</div>
+
+
+                <div class="user" *ngFor="let userChat of userChat" routerLink="/ChatRoom/En">
+                  <img src="{{userChat.picture}}" class="user-img">
+                  <div class="username">{{userChat.username}}
+                    <div class="user-status"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="search-bar right-search">
+          <input type="text" placeholder="Search" />
+          <div class="search-bar-svgs">
+            <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+            </svg>
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 469.34 469.34">
+              <path d="M456.84 76.17l-64-64.06c-16.13-16.13-44.18-16.17-60.37.04L45.77 301.67a10.73 10.73 0 00-2.7 4.59L.41 455.73a10.68 10.68 0 0013.19 13.2l149.33-42.7c1.73-.5 3.3-1.42 4.58-2.7l289.33-286.98c8.06-8.07 12.5-18.78 12.5-30.19s-4.44-22.12-12.5-30.2zM285.99 89.74L325.25 129l-205 205-14.7-29.44a10.67 10.67 0 00-9.55-5.9H78.92L286 89.75zM26.2 443.14l13.9-48.64 34.74 34.74-48.64 13.9zm123.14-35.18L98.3 422.54l-51.5-51.5L61.38 320H89.4l18.38 36.77a10.67 10.67 0 004.77 4.77l36.78 18.39v28.03zm21.33-17.54v-17.09c0-4.04-2.28-7.72-5.9-9.54l-29.43-14.7 205-205 39.26 39.26-208.93 207.07zm271.11-268.7l-47.03 46.61L301 74.6l46.59-47c8.06-8.07 22.1-8.07 30.16 0l64 64c4.03 4.03 6.25 9.38 6.25 15.08s-2.22 11.05-6.22 15.05z" /></svg>
+            <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M12 5v14M5 12h14"/>
+        </svg>
+          </div>
+        </div>
+      </div>
+</div>
+</div>

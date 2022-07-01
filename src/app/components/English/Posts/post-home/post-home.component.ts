@@ -16,6 +16,7 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import { UsersService } from 'src/app/services/HttpServices/users.service';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { AuthService } from '../../../../services/AuthServices/auth.service';
@@ -52,6 +53,7 @@ export class PostHomeComponent implements OnInit{
   faRightFromBracket = faRightFromBracket;
   faMobileScreenButton = faMobileScreenButton;
   faSmile = faSplotch;
+  faLanguage = faLanguage;
 
   constructor(private http:HttpClient, public posts:PostService, private ads:AdsService, private usersChat:UsersService, private router:Router, public authService:AuthService, private sign:SignInService, private loadScripts:LoadscriptsService) {
     loadScripts.Charge(["Posts/heart"])
@@ -76,6 +78,9 @@ export class PostHomeComponent implements OnInit{
   }
   likeButtonClick() {
     this.numberOfLikes++;
+  }
+  removeToken(){
+    localStorage.removeItem('Session Token')
   }
 }
 
